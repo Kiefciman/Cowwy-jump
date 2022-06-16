@@ -1,0 +1,209 @@
+[gd_scene load_steps=37 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/cow/idle/cow2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/cow/idle/cow7.png" type="Texture" id=3]
+[ext_resource path="res://Assets/cow/running/cow2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/cow/idle/cow3.png" type="Texture" id=5]
+[ext_resource path="res://Assets/cow/idle/cow5.png" type="Texture" id=6]
+[ext_resource path="res://Assets/cow/idle/cow4.png" type="Texture" id=7]
+[ext_resource path="res://Assets/cow/running/cow1.png" type="Texture" id=8]
+[ext_resource path="res://Assets/cow/running/cow3.png" type="Texture" id=9]
+[ext_resource path="res://Assets/cow/running/cow5.png" type="Texture" id=10]
+[ext_resource path="res://Assets/cow/running/cow4.png" type="Texture" id=11]
+[ext_resource path="res://Assets/cow/idle/cow6.png" type="Texture" id=12]
+[ext_resource path="res://Assets/cow/idle/cow1.png" type="Texture" id=13]
+[ext_resource path="res://Assets/cow/idle/cow.png" type="Texture" id=14]
+[ext_resource path="res://COMICBD.TTF" type="DynamicFontData" id=15]
+[ext_resource path="res://Assets/UI/panel_background.png" type="Texture" id=16]
+[ext_resource path="res://Assets/cow/idle_underwater/cow7.png" type="Texture" id=17]
+[ext_resource path="res://Assets/cow/running_underwater/cow1.png" type="Texture" id=18]
+[ext_resource path="res://Assets/cow/idle_underwater/cow2.png" type="Texture" id=19]
+[ext_resource path="res://Assets/cow/idle_underwater/cow4.png" type="Texture" id=20]
+[ext_resource path="res://Assets/cow/running_underwater/cow4.png" type="Texture" id=21]
+[ext_resource path="res://Assets/cow/idle_underwater/cow.png" type="Texture" id=22]
+[ext_resource path="res://Assets/cow/idle_underwater/cow3.png" type="Texture" id=23]
+[ext_resource path="res://Assets/cow/idle_underwater/cow1.png" type="Texture" id=24]
+[ext_resource path="res://Assets/cow/idle_underwater/cow6.png" type="Texture" id=25]
+[ext_resource path="res://Assets/cow/running_underwater/cow2.png" type="Texture" id=26]
+[ext_resource path="res://Assets/cow/running_underwater/cow3.png" type="Texture" id=27]
+[ext_resource path="res://Assets/cow/running_underwater/cow5.png" type="Texture" id=28]
+[ext_resource path="res://Assets/cow/idle_underwater/cow5.png" type="Texture" id=30]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "running",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "iddle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 21 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "running_underwater",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 19 ), ExtResource( 23 ), ExtResource( 20 ), ExtResource( 30 ), ExtResource( 25 ), ExtResource( 17 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "iddle_underwater",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 6.5 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.223529, 0.223529, 0.223529, 0.505882 )
+border_width_top = 1
+border_width_bottom = 1
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.498039, 0.6, 0.666667, 1 )
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.156863, 0.392157, 0.886275, 1 )
+border_width_left = 1
+border_width_right = 1
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing_size = 0.01
+
+[sub_resource type="DynamicFont" id=4]
+size = 64
+outline_size = 4
+use_filter = true
+font_data = ExtResource( 15 )
+
+[sub_resource type="Theme" id=5]
+Panel/styles/panel = SubResource( 8 )
+ProgressBar/styles/bg = SubResource( 7 )
+ProgressBar/styles/fg = SubResource( 3 )
+RichTextLabel/colors/default_color = Color( 0.156863, 0.47451, 0.886275, 1 )
+RichTextLabel/fonts/normal_font = SubResource( 4 )
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 232, -56 )
+z_index = -1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+initial_speed = 90
+initial_jump = 250
+gravity = 1500
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -8 )
+frames = SubResource( 1 )
+animation = "iddle"
+frame = 3
+playing = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.2, 0.2 )
+limit_left = -24
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 0, 0.5 )
+shape = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, 0.5 )
+shape = SubResource( 2 )
+
+[node name="UI" type="Node2D" parent="."]
+z_index = 100
+z_as_relative = false
+
+[node name="butthole_capacity" type="Control" parent="UI"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -20.0
+margin_top = -32.0
+margin_right = -20.0
+margin_bottom = -32.0
+rect_scale = Vector2( 0.8, 0.8 )
+theme = SubResource( 5 )
+
+[node name="Panel" type="Panel" parent="UI/butthole_capacity"]
+margin_top = 4.0
+margin_right = 56.2
+margin_bottom = 24.0
+
+[node name="ProgressBar" type="ProgressBar" parent="UI/butthole_capacity/Panel"]
+margin_left = 4.0
+margin_top = 12.0
+margin_right = 52.0
+margin_bottom = 16.0
+percent_visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/butthole_capacity/Panel"]
+margin_left = 4.0
+margin_top = 2.0
+margin_right = 604.0
+margin_bottom = 102.0
+rect_scale = Vector2( 0.08, 0.08 )
+text = " Butthole capacity"
+scroll_active = false
+
+[node name="Sprite" type="Sprite" parent="UI/butthole_capacity/Panel"]
+position = Vector2( 28.1, 10 )
+scale = Vector2( 0.094, 0.09 )
+z_index = -1
+texture = ExtResource( 16 )
+
+[node name="u_ded_lol" type="Control" parent="UI"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -114.0
+margin_top = -56.0
+margin_right = -114.0
+margin_bottom = -56.0
+rect_scale = Vector2( 4, 4 )
+theme = SubResource( 5 )
+
+[node name="Panel" type="Panel" parent="UI/u_ded_lol"]
+margin_top = 4.0
+margin_right = 56.2
+margin_bottom = 24.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/u_ded_lol/Panel"]
+margin_left = 3.75
+margin_top = 6.0
+margin_right = 603.75
+margin_bottom = 106.0
+rect_scale = Vector2( 0.08, 0.08 )
+text = "     U ded lol"
+scroll_active = false
+
+[node name="Sprite" type="Sprite" parent="UI/u_ded_lol/Panel"]
+position = Vector2( 28.1, 10 )
+scale = Vector2( 0.094, 0.09 )
+z_index = -1
+texture = ExtResource( 16 )

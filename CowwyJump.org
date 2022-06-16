@@ -1,0 +1,22 @@
+#+title: Cowwy Jump
+#+author: Kiefciman
+#+description: Cowwy Jump project planning
+
+* Key - door
+** Sprites
+*** TODO key
+*** TODO door (open/close)
+** Programing
+*** TODO door can be opened only with key
+
+* Cow (player)
+** Sprites
+*** DONE diving mask
+** UI
+*** DONE butthole capacity
+*** DONE u ded lol
+** Programing
+*** DONE diving mask
+*** TODO backflip
+*** DONE butthole capacity
+*** DONE u ded lol

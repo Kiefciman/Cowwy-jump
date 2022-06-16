@@ -10,5 +10,3 @@ func _process(_delta):
 # Exit
 	if Input.is_action_pressed("escape"):
 		get_tree().quit()
-	
-	

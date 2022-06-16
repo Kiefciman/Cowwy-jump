@@ -4,6 +4,6 @@ app = Ursina()
 
 camera.isometric = True
 
-cow = Animation('cow', fps = 2, scale = 4)
+cow = Animation('cow', fps = 100, scale = 4)
 
 app.run()

@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/water2d/Water2D.gd" type="Script" id=1]
+[ext_resource path="res://addons/water2d/icon.png" type="Texture" id=2]
+[ext_resource path="res://addons/water2d/water2D_material.tres" type="Material" id=3]
+
+[node name="Water2D" type="Sprite"]
+material = ExtResource( 3 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )

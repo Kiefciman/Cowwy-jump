@@ -32,24 +32,24 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 24 ), ExtResource( 19 ), ExtResource( 23 ), ExtResource( 20 ), ExtResource( 30 ), ExtResource( 25 ), ExtResource( 17 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "iddle_underwater",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 8 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "running",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 13 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "iddle",
-"speed": 5.0
 }, {
 "frames": [ ExtResource( 18 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 21 ), ExtResource( 28 ) ],
 "loop": true,
 "name": "running_underwater",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 24 ), ExtResource( 19 ), ExtResource( 23 ), ExtResource( 20 ), ExtResource( 30 ), ExtResource( 25 ), ExtResource( 17 ), ExtResource( 22 ) ],
+"frames": [ ExtResource( 13 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 14 ) ],
 "loop": true,
-"name": "iddle_underwater",
+"name": "iddle",
 "speed": 5.0
 } ]
 
@@ -115,13 +115,14 @@ gravity = 1500
 position = Vector2( 0, -8 )
 frames = SubResource( 1 )
 animation = "iddle"
-frame = 3
+frame = 7
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 zoom = Vector2( 0.2, 0.2 )
 limit_left = -24
+limit_right = 1705
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false

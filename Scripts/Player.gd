@@ -10,6 +10,7 @@ var jump_upgrade = 0
 var butthole_capacity = 0
 var dead = false
 var underwater = false
+var key_taken = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -32,13 +33,22 @@ func _process(delta):
 
 	# Controls
 		if Input.is_action_pressed("a"):
-			velocity.x -= speed
+			if Input.is_action_pressed("speed"):
+				velocity.x -= speed
+			else:
+				velocity.x -= initial_speed
 			$AnimatedSprite.flip_h = true
 		if Input.is_action_pressed("d"):
-			velocity.x += speed
+			if Input.is_action_pressed("speed"):
+				velocity.x += speed
+			else:
+				velocity.x += initial_speed
 			$AnimatedSprite.flip_h = false
 		if Input.is_action_just_pressed("space") and is_on_floor():
-			velocity.y -= jump
+			if Input.is_action_pressed("jumpboost"):
+				velocity.y -= jump
+			else:
+				velocity.y -= initial_jump
 			
 	# Apply the velocity
 		velocity = move_and_slide(velocity, Vector2.UP)
@@ -82,3 +92,14 @@ func _on_water_area_area_exited(area):
 func _on_speed_carrot_area_entered(area):
 	get_parent().get_node("speed_carrot").queue_free()
 	speed_upgrade += 1
+
+
+func _on_key_area_entered(area):
+	get_parent().get_node("key").queue_free()
+	key_taken = true
+
+
+func _on_door_area_entered(area):
+	if key_taken == true:
+		get_parent().level += 1
+		get_tree().quit()

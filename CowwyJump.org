@@ -4,10 +4,13 @@
 
 * Key - door
 ** Sprites
-*** TODO key
-*** TODO door (open/close)
+*** DONE key
+*** DONE door opened
+*** DONE door closed
 ** Programing
-*** TODO door can be opened only with key
+*** DONE door can be opened only with key
+** Effects
+*** DONE opened door
 
 * Cow (player)
 ** Sprites
@@ -20,3 +23,34 @@
 *** TODO backflip
 *** DONE butthole capacity
 *** DONE u ded lol
+
+* Background animals
+** Sprites
+*** TODO fishes
+*** TODO flying whales
+** Programing
+*** TODO fish entering butthole (instant death)
+** Animations
+*** TODO flying whales
+
+* Background
+** Sprites
+*** TODO clouds
+*** TODO trees
+*** TODO leaves
+** Animations
+*** TODO trees
+*** TODO leaves
+** Programing
+*** TODO wind
+*** TODO leaves react to wind
+*** TODO trees react to wind
+
+* Help panels
+*** DONE Sprite
+*** TODO programming
+*** TODO UI
+
+* Game mechanics
+** Programing
+*** DONE restart level

@@ -20,7 +20,6 @@
 *** DONE u ded lol
 ** Programing
 *** DONE diving mask
-*** TODO backflip
 *** DONE butthole capacity
 *** DONE u ded lol
 
@@ -28,23 +27,23 @@
 ** Sprites
 *** TODO fishes
 *** TODO flying whales
-** Programing
-*** TODO fish entering butthole (instant death)
 ** Animations
 *** TODO flying whales
 
 * Background
 ** Sprites
-*** TODO clouds
-*** TODO trees
-*** TODO leaves
+*** DONE trees
+*** DONE leaves
+*** DONE bushes
 ** Animations
-*** TODO trees
-*** TODO leaves
+*** DONE trees
+*** DONE clouds
+*** DONE leaves
+*** DONE bushes
+*** TODO wawes
 ** Programing
-*** TODO wind
-*** TODO leaves react to wind
-*** TODO trees react to wind
+*** DONE wind
+*** DONE trees react to wind
 
 * Help panels
 *** DONE Sprite
@@ -54,3 +53,6 @@
 * Game mechanics
 ** Programing
 *** DONE restart level
+
+* UI
+*** TODO timer

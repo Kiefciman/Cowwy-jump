@@ -1,11 +1,20 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Shaders/slow-wind.shader" type="Shader" id=1]
 [ext_resource path="res://Assets/trees/tree1-1.png" type="Texture" id=2]
-[ext_resource path="res://Assets/trees/tree1.png" type="Texture" id=3]
-[ext_resource path="res://Assets/trees/tree1-2.png" type="Texture" id=4]
 [ext_resource path="res://Assets/trees/leaf.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/VisibilityNotifier2D.gd" type="Script" id=6]
+[ext_resource path="res://Assets/trees/tree1.1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/trees/tree1-1.3.png" type="Texture" id=8]
+[ext_resource path="res://Assets/trees/tree1.2.png" type="Texture" id=9]
+[ext_resource path="res://Assets/trees/tree1-1.4.png" type="Texture" id=10]
+[ext_resource path="res://Assets/trees/tree1-2.2.png" type="Texture" id=12]
+[ext_resource path="res://Assets/trees/tree1-2.3.png" type="Texture" id=13]
+[ext_resource path="res://Assets/trees/tree1-2.4.png" type="Texture" id=14]
+[ext_resource path="res://Assets/trees/tree1.3.png" type="Texture" id=15]
+[ext_resource path="res://Assets/trees/tree1.4.png" type="Texture" id=16]
+[ext_resource path="res://Assets/trees/tree1-1.1.png" type="Texture" id=17]
+[ext_resource path="res://Assets/trees/tree1-1.2.png" type="Texture" id=18]
 
 [sub_resource type="ShaderMaterial" id=30]
 shader = ExtResource( 1 )
@@ -21,18 +30,18 @@ shader_param/offset = 0.0
 
 [sub_resource type="SpriteFrames" id=29]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "default",
-"speed": 2.5
+"speed": 8.0
 } ]
 
 [node name="skinny-tree" type="AnimatedSprite"]
 material = SubResource( 30 )
-position = Vector2( 232, -80 )
+position = Vector2( 232, -64 )
 z_index = -2
 frames = SubResource( 29 )
-frame = 2
+frame = 13
 playing = true
 
 [node name="leaves" type="CPUParticles2D" parent="."]

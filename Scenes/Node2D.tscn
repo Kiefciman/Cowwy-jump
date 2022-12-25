@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://Assets/ground/ground-top.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -9,8 +9,6 @@
 [ext_resource path="res://Scripts/carrot.gd" type="Script" id=7]
 [ext_resource path="res://Assets/items/carrot.png" type="Texture" id=8]
 [ext_resource path="res://Assets/items/key.png" type="Texture" id=9]
-[ext_resource path="res://Assets/items/door_closed.png" type="Texture" id=10]
-[ext_resource path="res://Assets/items/door_opened.png" type="Texture" id=11]
 [ext_resource path="res://Assets/ground/ground-mid.png" type="Texture" id=12]
 [ext_resource path="res://Assets/items/Light.png" type="Texture" id=13]
 [ext_resource path="res://Scripts/door.gd" type="Script" id=14]
@@ -213,12 +211,12 @@ radius = 16.0
 
 [sub_resource type="SpriteFrames" id=20]
 animations = [ {
-"frames": [ ExtResource( 10 ) ],
+"frames": [ null ],
 "loop": false,
 "name": "closed",
 "speed": 0.0
 }, {
-"frames": [ ExtResource( 11 ) ],
+"frames": [ null ],
 "loop": false,
 "name": "opened",
 "speed": 0.0
@@ -280,1563 +278,1563 @@ z_index = -2
 z_as_relative = false
 
 [node name="grass-back" parent="ground/grass_back" instance=ExtResource( 18 )]
-frame = 0
+frame = 3
 
 [node name="grass-back2" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 24, -24 )
-frame = 0
+frame = 3
 
 [node name="grass-back3" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 40, -24 )
-frame = 0
+frame = 3
 
 [node name="grass-back4" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 56, -24 )
-frame = 0
+frame = 3
 
 [node name="grass-back5" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 72, -24 )
-frame = 0
+frame = 3
 
 [node name="grass-back6" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 88, -24 )
-frame = 0
+frame = 3
 
 [node name="grass-back7" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 120, -24 )
-frame = 0
+frame = 3
 
 [node name="grass-back8" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 136, -24 )
-frame = 0
+frame = 3
 
 [node name="grass-back9" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 152, -24 )
-frame = 0
+frame = 3
 
 [node name="grass-back10" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 104, -24 )
-frame = 3
+frame = 2
 
 [node name="grass-back11" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 168, -24 )
-frame = 3
+frame = 2
 
 [node name="grass-back12" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 184, -24 )
-frame = 0
+frame = 3
 
 [node name="grass-back13" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 200, -40 )
-frame = 0
+frame = 3
 
 [node name="grass-back14" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 216, -40 )
-frame = 0
+frame = 3
 
 [node name="grass-back15" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 248, -40 )
-frame = 0
+frame = 3
 
 [node name="grass-back16" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 296, -40 )
-frame = 0
+frame = 3
 
 [node name="grass-back17" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 312, -40 )
-frame = 0
+frame = 3
 
 [node name="grass-back18" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 328, -40 )
-frame = 3
+frame = 2
 
 [node name="grass-back19" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 344, -56 )
-frame = 3
+frame = 2
 
 [node name="grass-back20" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 360, -56 )
-frame = 3
+frame = 2
 
 [node name="grass-back21" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 376, -72 )
-frame = 3
+frame = 2
 
 [node name="grass-back22" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 392, -72 )
-frame = 3
+frame = 2
 
 [node name="grass-back23" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 408, -88 )
-frame = 0
+frame = 3
 
 [node name="grass-back24" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 424, -88 )
-frame = 0
+frame = 3
 
 [node name="grass-back25" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 440, -88 )
-frame = 0
+frame = 3
 
 [node name="grass-back26" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 456, -88 )
-frame = 0
+frame = 3
 
 [node name="grass-back27" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 472, -88 )
-frame = 0
+frame = 3
 
 [node name="grass-back28" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 568, -88 )
-frame = 3
+frame = 2
 
 [node name="grass-back29" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 584, -88 )
-frame = 3
+frame = 2
 
 [node name="grass-back30" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 600, -88 )
-frame = 3
+frame = 2
 
 [node name="grass-back31" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 616, -88 )
-frame = 0
+frame = 3
 
 [node name="grass-back32" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 632, -88 )
-frame = 0
+frame = 3
 
 [node name="grass-back33" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 648, -88 )
-frame = 0
+frame = 3
 
 [node name="grass-back34" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 664, -104 )
-frame = 0
+frame = 3
 
 [node name="grass-back35" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 680, -104 )
-frame = 0
+frame = 3
 
 [node name="grass-back36" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 696, -104 )
-frame = 0
+frame = 3
 
 [node name="grass-back37" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 712, -104 )
-frame = 3
+frame = 2
 
 [node name="grass-back38" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 728, -104 )
-frame = 3
+frame = 2
 
 [node name="grass-back39" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 792, -104 )
-frame = 0
+frame = 3
 
 [node name="grass-back40" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 808, -104 )
-frame = 0
+frame = 3
 
 [node name="grass-back41" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 824, -104 )
-frame = 0
+frame = 3
 
 [node name="grass-back42" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 840, -120 )
-frame = 0
+frame = 3
 
 [node name="grass-back43" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 856, -120 )
-frame = 3
+frame = 2
 
 [node name="grass-back44" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 872, -136 )
-frame = 0
+frame = 3
 
 [node name="grass-back45" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 888, -136 )
-frame = 0
+frame = 3
 
 [node name="grass-back46" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 904, -152 )
-frame = 0
+frame = 3
 
 [node name="grass-back47" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 920, -168 )
-frame = 0
+frame = 3
 
 [node name="grass-back48" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 936, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back49" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 952, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back50" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 968, -184 )
-frame = 3
+frame = 2
 
 [node name="grass-back51" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 984, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back52" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1064, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back53" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1080, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back54" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1096, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back55" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1112, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back56" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1128, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back57" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1144, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back58" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1160, -200 )
-frame = 0
+frame = 3
 
 [node name="grass-back59" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1176, -200 )
-frame = 3
+frame = 2
 
 [node name="grass-back60" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1192, -200 )
-frame = 3
+frame = 2
 
 [node name="grass-back61" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1208, -200 )
-frame = 3
+frame = 2
 
 [node name="grass-back62" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1224, -184 )
-frame = 3
+frame = 2
 
 [node name="grass-back63" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1240, -168 )
-frame = 0
+frame = 3
 
 [node name="grass-back64" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1256, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back65" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1272, -200 )
-frame = 0
+frame = 3
 
 [node name="grass-back66" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1304, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back67" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1320, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back68" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1336, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back69" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1352, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back70" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1368, -184 )
-frame = 3
+frame = 2
 
 [node name="grass-back71" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1384, -184 )
-frame = 3
+frame = 2
 
 [node name="grass-back72" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1400, -200 )
-frame = 0
+frame = 3
 
 [node name="grass-back73" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1416, -200 )
-frame = 0
+frame = 3
 
 [node name="grass-back74" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1432, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back75" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1448, -168 )
-frame = 0
+frame = 3
 
 [node name="grass-back76" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1464, -168 )
-frame = 0
+frame = 3
 
 [node name="grass-back77" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1480, -184 )
-frame = 0
+frame = 3
 
 [node name="grass-back78" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1496, -200 )
-frame = 3
+frame = 2
 
 [node name="grass-back79" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1512, -216 )
-frame = 3
+frame = 2
 
 [node name="grass-back80" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1528, -216 )
-frame = 3
+frame = 2
 
 [node name="grass-back81" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1544, -200 )
-frame = 0
+frame = 3
 
 [node name="grass-back82" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1560, -200 )
-frame = 0
+frame = 3
 
 [node name="grass-back83" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1576, -216 )
-frame = 0
+frame = 3
 
 [node name="grass-back84" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1592, -216 )
-frame = 0
+frame = 3
 
 [node name="grass-back85" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1688, -312 )
-frame = 0
+frame = 3
 
 [node name="grass-back86" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1704, -312 )
-frame = 0
+frame = 3
 
 [node name="grass-back87" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1336, -216 )
-frame = 0
+frame = 3
 
 [node name="grass-back88" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1320, -232 )
-frame = 3
+frame = 2
 
 [node name="grass-back89" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1304, -248 )
-frame = 3
+frame = 2
 
 [node name="grass-back90" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1288, -248 )
-frame = 3
+frame = 2
 
 [node name="grass-back91" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1272, -264 )
-frame = 0
+frame = 3
 
 [node name="grass-back92" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1256, -264 )
-frame = 0
+frame = 3
 
 [node name="grass-back93" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1240, -264 )
-frame = 0
+frame = 3
 
 [node name="grass-back94" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1224, -280 )
-frame = 0
+frame = 3
 
 [node name="grass-back95" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1208, -296 )
-frame = 0
+frame = 3
 
 [node name="grass-back96" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1192, -296 )
-frame = 0
+frame = 3
 
 [node name="grass-back97" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1176, -312 )
-frame = 0
+frame = 3
 
 [node name="grass-back98" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1160, -312 )
-frame = 3
+frame = 2
 
 [node name="grass-back99" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1144, -312 )
-frame = 3
+frame = 2
 
 [node name="grass-back100" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1128, -312 )
-frame = 3
+frame = 2
 
 [node name="grass-back101" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1112, -312 )
-frame = 0
+frame = 3
 
 [node name="grass-back102" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1096, -312 )
-frame = 0
+frame = 3
 
 [node name="grass-back103" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1080, -312 )
-frame = 0
+frame = 3
 
 [node name="grass-back104" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1064, -328 )
-frame = 0
+frame = 3
 
 [node name="grass-back105" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1048, -328 )
-frame = 3
+frame = 2
 
 [node name="grass-back106" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1032, -328 )
-frame = 0
+frame = 3
 
 [node name="grass-back107" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1016, -344 )
-frame = 0
+frame = 3
 
 [node name="grass-back108" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1000, -344 )
-frame = 0
+frame = 3
 
 [node name="grass-back109" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 968, -360 )
-frame = 0
+frame = 3
 
 [node name="grass-back110" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 952, -360 )
-frame = 0
+frame = 3
 
 [node name="grass-back111" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 936, -360 )
-frame = 3
+frame = 2
 
 [node name="grass-back112" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 920, -360 )
-frame = 3
+frame = 2
 
 [node name="grass-back113" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 904, -360 )
-frame = 3
+frame = 2
 
 [node name="grass-back114" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 888, -376 )
-frame = 3
+frame = 2
 
 [node name="grass-back115" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 872, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back116" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 792, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back117" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 776, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back118" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 760, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back119" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 744, -376 )
-frame = 3
+frame = 2
 
 [node name="grass-back120" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 728, -376 )
-frame = 3
+frame = 2
 
 [node name="grass-back121" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 712, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back122" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 632, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back123" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 616, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back124" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 600, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back125" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 584, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back126" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 568, -376 )
-frame = 3
+frame = 2
 
 [node name="grass-back127" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 552, -392 )
-frame = 3
+frame = 2
 
 [node name="grass-back128" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 536, -408 )
-frame = 3
+frame = 2
 
 [node name="grass-back129" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 520, -392 )
-frame = 0
+frame = 3
 
 [node name="grass-back130" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 504, -392 )
-frame = 0
+frame = 3
 
 [node name="grass-back131" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 488, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back132" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 472, -360 )
-frame = 0
+frame = 3
 
 [node name="grass-back133" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 456, -360 )
-frame = 0
+frame = 3
 
 [node name="grass-back134" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 440, -376 )
-frame = 3
+frame = 2
 
 [node name="grass-back135" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 424, -376 )
-frame = 3
+frame = 2
 
 [node name="grass-back136" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 408, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back137" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 392, -376 )
-frame = 0
+frame = 3
 
 [node name="grass-back138" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 376, -360 )
-frame = 0
+frame = 3
 
 [node name="grass-back139" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 360, -360 )
-frame = 3
+frame = 2
 
 [node name="grass-back140" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 344, -360 )
-frame = 3
+frame = 2
 
 [node name="grass-back141" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 328, -344 )
-frame = 0
+frame = 3
 
 [node name="grass-back142" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 312, -344 )
-frame = 0
+frame = 3
 
 [node name="grass-back143" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 296, -344 )
-frame = 0
+frame = 3
 
 [node name="grass-back144" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 280, -344 )
-frame = 0
+frame = 3
 
 [node name="grass-back145" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 264, -344 )
-frame = 0
+frame = 3
 
 [node name="grass-back146" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 248, -344 )
-frame = 0
+frame = 3
 
 [node name="grass-back147" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 216, -312 )
-frame = 3
+frame = 2
 
 [node name="grass-back148" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 200, -312 )
-frame = 3
+frame = 2
 
 [node name="grass-back149" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 168, -248 )
-frame = 0
+frame = 3
 
 [node name="grass-back150" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 88, -264 )
-frame = 0
+frame = 3
 
 [node name="grass-back151" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 72, -264 )
-frame = 0
+frame = 3
 
 [node name="grass-back152" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 56, -264 )
-frame = 0
+frame = 3
 
 [node name="grass-back153" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 40, -264 )
-frame = 3
+frame = 2
 
 [node name="grass-back154" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 24, -408 )
-frame = 0
+frame = 3
 
 [node name="grass-back155" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 8, -408 )
-frame = 0
+frame = 3
 
 [node name="grass-back156" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( -8, -408 )
-frame = 0
+frame = 3
 
 [node name="grass-back157" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( -24, -408 )
-frame = 0
+frame = 3
 
 [node name="grass-back158" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 232, -328 )
-frame = 0
+frame = 3
 
 [node name="grass-back159" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 184, -280 )
-frame = 0
+frame = 3
 
 [node name="grass-back160" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( -24, -216 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back161" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( -8, -200 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back162" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 8, -184 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back163" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 24, -168 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back164" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 40, -152 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back165" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 56, -168 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back166" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 72, -184 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back167" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 88, -200 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back168" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 184, -200 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back344" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 168, -200 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back169" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 200, -216 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back170" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 216, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back171" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 232, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back172" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 248, -264 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back173" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 264, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back174" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 280, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back175" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 296, -264 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back176" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 312, -280 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back177" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 328, -280 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back178" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 344, -264 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back179" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 360, -264 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back180" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 376, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back181" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 392, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back182" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 408, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back183" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 424, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back184" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 440, -248 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back185" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 456, -248 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back186" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 472, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back187" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 488, -264 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back188" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 504, -264 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back189" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 520, -264 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back190" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 536, -264 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back191" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 552, -264 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back192" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 568, -248 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back193" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 584, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back194" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 600, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back195" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 616, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back196" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 632, -264 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back197" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 712, -280 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back198" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 728, -248 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back199" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 744, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back200" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 760, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back201" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 776, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back202" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 792, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back203" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 808, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back204" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 824, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back205" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 840, -264 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back206" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 856, -264 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back207" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 872, -264 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back208" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 888, -264 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back209" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 904, -248 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back210" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 920, -232 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back211" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 936, -232 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back212" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 952, -232 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back213" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 968, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back214" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 984, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back215" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1000, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back216" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1016, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back217" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1032, -232 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back218" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1048, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back219" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1064, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back220" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1080, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back221" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1096, -216 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back222" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1112, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back223" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1128, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back224" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1144, -216 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back225" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1160, -200 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back226" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1176, -216 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back227" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1192, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back228" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1208, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back229" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1224, -232 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back230" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1240, -216 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back231" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1256, -216 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back232" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1272, -200 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back233" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1288, -200 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back234" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1304, -200 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back235" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1704, -168 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back236" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1688, -136 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back237" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1672, -120 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back238" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1656, -104 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back239" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1640, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back240" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1624, -72 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back241" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1608, -88 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back242" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1592, -104 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back243" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1576, -104 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back244" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1560, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back245" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1544, -72 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back246" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1528, -56 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back247" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1512, -72 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back248" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1496, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back249" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1480, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back250" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1464, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back251" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1448, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back252" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1432, -88 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back253" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1416, -72 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back254" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1400, -56 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back255" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1384, -56 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back256" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1368, -56 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back257" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1352, -56 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back258" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1336, -72 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back259" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1320, -56 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back260" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1304, -40 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back261" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1288, -40 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back262" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1272, -56 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back263" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1256, -72 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back264" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1240, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back265" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1224, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back266" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1208, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back267" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1192, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back268" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1176, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back269" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1160, -88 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back270" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1144, -72 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back271" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1128, -72 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back272" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1112, -72 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back273" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1096, -56 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back274" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1080, -56 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back275" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1064, -40 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back276" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1048, -40 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back277" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1032, -40 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back278" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1016, -24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back279" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 1000, -24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back280" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 984, -24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back281" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 968, -40 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back282" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 952, -40 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back283" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 936, -56 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back284" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 920, -56 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back285" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 904, -40 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back286" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 888, -40 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back287" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 872, -24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back288" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 856, -24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back289" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 840, -8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back290" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 824, -8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back291" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 808, 8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back292" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 792, 8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back293" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 776, 24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back294" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 760, 24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back295" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 744, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back296" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 728, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back297" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 712, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back298" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 696, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back299" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 680, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back300" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 664, 24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back301" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 648, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back302" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 632, 8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back303" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 616, 8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back304" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 600, 8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back305" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 584, 8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back306" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 568, 8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back307" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 552, 8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back308" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 536, 8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back309" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 519, -8 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back310" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 504, -8 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back311" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 488, -8 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back312" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 472, -8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back313" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 456, -8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back314" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 440, 8 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back315" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 424, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back316" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 408, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back317" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 392, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back318" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 376, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back319" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 360, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back320" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 344, 24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back321" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 328, 24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back322" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 312, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back323" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 296, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back324" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 280, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back325" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 264, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back326" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 248, 24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back327" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 232, 24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back328" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 216, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back329" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 200, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back330" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 184, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back331" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 168, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back332" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 152, 24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back333" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 136, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back334" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 120, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back335" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 104, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back336" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 88, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back337" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 72, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back338" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 56, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back339" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 40, 24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back340" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 24, 24 )
-frame = 3
+frame = 2
 flip_v = true
 
 [node name="grass-back341" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( 8, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back342" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( -8, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass-back343" parent="ground/grass_back" instance=ExtResource( 18 )]
 position = Vector2( -24, 24 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front" type="Node2D" parent="ground"]
@@ -1845,1599 +1843,1518 @@ z_index = 1
 
 [node name="grass_front" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -80, -1.472 )
-frame = 3
 
 [node name="grass_front2" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -64, -1.472 )
-frame = 0
+frame = 3
 
 [node name="grass_front3" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -48, -1.472 )
-frame = 0
+frame = 3
 
 [node name="grass_front4" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -32, -1.472 )
-frame = 1
+frame = 0
 
 [node name="grass_front5" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -16, -1.472 )
-frame = 1
+frame = 0
 
 [node name="grass_front6" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 0, -1.472 )
-frame = 1
+frame = 0
 
 [node name="grass_front7" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 16, -1.472 )
-frame = 1
+frame = 0
 
 [node name="grass_front8" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 32, -1.472 )
-frame = 3
 
 [node name="grass_front9" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 48, -1.472 )
-frame = 3
 
 [node name="grass_front10" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 64, -1.472 )
-frame = 0
+frame = 3
 
 [node name="grass_front11" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 80, -1 )
-frame = 1
+frame = 0
 
 [node name="grass_front12" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 96, -1 )
-frame = 1
+frame = 0
 
 [node name="grass_front13" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 112, -17 )
-frame = 0
+frame = 3
 
 [node name="grass_front14" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 128, -17 )
-frame = 1
+frame = 0
 
 [node name="grass_front15" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 144, -17 )
-frame = 0
+frame = 3
 
 [node name="grass_front16" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 160, -17 )
-frame = 0
+frame = 3
 
 [node name="grass_front17" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 208, -17 )
-frame = 1
+frame = 0
 
 [node name="grass_front18" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 224, -17 )
-frame = 1
+frame = 0
 
 [node name="grass_front19" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 240, -17 )
-frame = 1
+frame = 0
 
 [node name="grass_front20" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 256, -33 )
-frame = 1
+frame = 0
 
 [node name="grass_front21" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 272, -33 )
-frame = 0
+frame = 3
 
 [node name="grass_front22" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 288, -49 )
-frame = 1
+frame = 0
 
 [node name="grass_front23" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 304, -49 )
-frame = 1
+frame = 0
 
 [node name="grass_front24" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 320, -65 )
-frame = 0
+frame = 3
 
 [node name="grass_front25" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 336, -65 )
-frame = 0
+frame = 3
 
 [node name="grass_front26" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 352, -65 )
-frame = 0
+frame = 3
 
 [node name="grass_front27" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 368, -65 )
-frame = 1
+frame = 0
 
 [node name="grass_front28" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 384, -65 )
-frame = 1
+frame = 0
 
 [node name="grass_front29" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 400, -65 )
-frame = 1
+frame = 0
 
 [node name="grass_front30" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 480, -65 )
-frame = 1
+frame = 0
 
 [node name="grass_front31" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 496, -65 )
-frame = 0
+frame = 3
 
 [node name="grass_front32" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 512, -65 )
-frame = 3
 
 [node name="grass_front33" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 528, -65 )
-frame = 3
 
 [node name="grass_front34" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 544, -65 )
-frame = 3
 
 [node name="grass_front35" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 560, -65 )
-frame = 0
+frame = 3
 
 [node name="grass_front36" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 576, -81 )
-frame = 0
+frame = 3
 
 [node name="grass_front37" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 592, -81 )
-frame = 1
+frame = 0
 
 [node name="grass_front38" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 608, -81 )
-frame = 1
+frame = 0
 
 [node name="grass_front39" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 624, -81 )
-frame = 0
+frame = 3
 
 [node name="grass_front40" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 640, -81 )
-frame = 0
+frame = 3
 
 [node name="grass_front41" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 704, -81 )
-frame = 0
+frame = 3
 
 [node name="grass_front42" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 720, -81 )
-frame = 3
 
 [node name="grass_front43" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 736, -81 )
-frame = 3
 
 [node name="grass_front44" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 752, -97 )
-frame = 0
+frame = 3
 
 [node name="grass_front45" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 768, -97 )
-frame = 0
+frame = 3
 
 [node name="grass_front46" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 784, -113 )
-frame = 1
+frame = 0
 
 [node name="grass_front47" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 800, -113 )
-frame = 1
+frame = 0
 
 [node name="grass_front48" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 816, -129 )
-frame = 1
+frame = 0
 
 [node name="grass_front49" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 832, -145 )
-frame = 0
+frame = 3
 
 [node name="grass_front50" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 848, -161 )
-frame = 0
+frame = 3
 
 [node name="grass_front51" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 864, -161 )
-frame = 3
 
 [node name="grass_front52" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 880, -161 )
-frame = 0
+frame = 3
 
 [node name="grass_front53" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 896, -161 )
-frame = 0
+frame = 3
 
 [node name="grass_front54" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 976, -161 )
-frame = 0
+frame = 3
 
 [node name="grass_front55" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 992, -161 )
-frame = 0
+frame = 3
 
 [node name="grass_front56" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1008, -161 )
-frame = 1
+frame = 0
 
 [node name="grass_front57" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1024, -161 )
-frame = 1
+frame = 0
 
 [node name="grass_front58" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1042, -161 )
-frame = 0
+frame = 3
 
 [node name="grass_front59" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1056, -161 )
-frame = 0
+frame = 3
 
 [node name="grass_front60" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1072, -177 )
-frame = 3
 
 [node name="grass_front61" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1088, -177 )
-frame = 3
 
 [node name="grass_front62" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1104, -177 )
-frame = 3
 
 [node name="grass_front63" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1120, -177 )
-frame = 3
 
 [node name="grass_front64" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1136, -161 )
-frame = 0
+frame = 3
 
 [node name="grass_front65" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1152, -145 )
-frame = 1
+frame = 0
 
 [node name="grass_front66" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1168, -161 )
-frame = 1
+frame = 0
 
 [node name="grass_front67" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1184, -177 )
-frame = 1
+frame = 0
 
 [node name="grass_front68" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1200, -177 )
-frame = 0
+frame = 3
 
 [node name="grass_front69" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1216, -161 )
-frame = 3
 
 [node name="grass_front70" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1232, -161 )
-frame = 3
 
 [node name="grass_front71" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1248, -161 )
-frame = 3
 
 [node name="grass_front72" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1264, -161 )
-frame = 0
+frame = 3
 
 [node name="grass_front73" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1280, -161 )
-frame = 0
+frame = 3
 
 [node name="grass_front74" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1296, -161 )
-frame = 1
+frame = 0
 
 [node name="grass_front75" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1312, -177 )
-frame = 0
+frame = 3
 
 [node name="grass_front76" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1328, -177 )
-frame = 0
+frame = 3
 
 [node name="grass_front77" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1344, -161 )
-frame = 3
 
 [node name="grass_front78" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1360, -145 )
-frame = 3
 
 [node name="grass_front79" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1376, -145 )
-frame = 0
+frame = 3
 
 [node name="grass_front80" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1392, -161 )
-frame = 0
+frame = 3
 
 [node name="grass_front81" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1408, -177 )
-frame = 1
+frame = 0
 
 [node name="grass_front82" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1424, -193 )
-frame = 0
+frame = 3
 
 [node name="grass_front83" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1424, -193 )
-frame = 0
+frame = 3
 
 [node name="grass_front84" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1440, -193 )
-frame = 3
 
 [node name="grass_front85" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1456, -177 )
-frame = 0
+frame = 3
 
 [node name="grass_front86" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1472, -177 )
-frame = 0
+frame = 3
 
 [node name="grass_front87" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1488, -193 )
-frame = 1
+frame = 0
 
 [node name="grass_front88" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1502, -193 )
-frame = 1
+frame = 0
 
 [node name="grass_front89" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1502, -193 )
-frame = 0
+frame = 3
 
 [node name="grass_front90" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1584, -193 )
-frame = 0
+frame = 3
 
 [node name="grass_front91" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1600, -289 )
-frame = 0
+frame = 3
 
 [node name="grass_front92" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1616, -289 )
-frame = 0
+frame = 3
 
 [node name="grass_front93" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1248, -193 )
-frame = 3
 
 [node name="grass_front94" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1232, -209 )
-frame = 3
 
 [node name="grass_front95" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1216, -225 )
-frame = 0
+frame = 3
 
 [node name="grass_front96" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1200, -225 )
-frame = 0
+frame = 3
 
 [node name="grass_front97" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1184, -241 )
-frame = 0
+frame = 3
 
 [node name="grass_front98" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1168, -241 )
-frame = 1
+frame = 0
 
 [node name="grass_front99" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1152, -241 )
-frame = 1
+frame = 0
 
 [node name="grass_front100" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1136, -257 )
-frame = 1
+frame = 0
 
 [node name="grass_front101" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1120, -273 )
-frame = 0
+frame = 3
 
 [node name="grass_front102" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1104, -273 )
-frame = 3
 
 [node name="grass_front103" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1088, -289 )
-frame = 3
 
 [node name="grass_front104" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1072, -289 )
-frame = 3
 
 [node name="grass_front105" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1056, -289 )
-frame = 0
+frame = 3
 
 [node name="grass_front106" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1040, -289 )
-frame = 0
+frame = 3
 
 [node name="grass_front107" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1024, -289 )
-frame = 0
+frame = 3
 
 [node name="grass_front108" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1008, -289 )
-frame = 0
+frame = 3
 
 [node name="grass_front109" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 992, -289 )
-frame = 1
+frame = 0
 
 [node name="grass_front110" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 976, -305 )
-frame = 1
+frame = 0
 
 [node name="grass_front111" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 960, -305 )
-frame = 0
+frame = 3
 
 [node name="grass_front112" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 944, -305 )
-frame = 0
+frame = 3
 
 [node name="grass_front113" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 928, -321 )
-frame = 0
+frame = 3
 
 [node name="grass_front114" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 912, -321 )
-frame = 3
 
 [node name="grass_front115" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 896, -321 )
-frame = 0
+frame = 3
 
 [node name="grass_front116" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 880, -337 )
-frame = 1
+frame = 0
 
 [node name="grass_front117" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 864, -337 )
-frame = 1
+frame = 0
 
 [node name="grass_front118" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 848, -337 )
-frame = 0
+frame = 3
 
 [node name="grass_front119" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 832, -337 )
-frame = 3
 
 [node name="grass_front120" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 816, -337 )
-frame = 3
 
 [node name="grass_front121" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 800, -353 )
-frame = 0
+frame = 3
 
 [node name="grass_front122" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 784, -353 )
-frame = 1
+frame = 0
 
 [node name="grass_front123" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 704, -353 )
-frame = 1
+frame = 0
 
 [node name="grass_front124" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 688, -353 )
-frame = 1
+frame = 0
 
 [node name="grass_front125" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 672, -353 )
-frame = 0
+frame = 3
 
 [node name="grass_front126" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 656, -353 )
-frame = 0
+frame = 3
 
 [node name="grass_front127" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 640, -353 )
-frame = 3
 
 [node name="grass_front128" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 624, -353 )
-frame = 3
 
 [node name="grass_front129" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 544, -353 )
-frame = 3
 
 [node name="grass_front130" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 528, -353 )
-frame = 0
+frame = 3
 
 [node name="grass_front131" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 512, -353 )
-frame = 1
+frame = 0
 
 [node name="grass_front132" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 496, -353 )
-frame = 1
+frame = 0
 
 [node name="grass_front133" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 480, -353 )
-frame = 1
+frame = 0
 
 [node name="grass_front134" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 464, -369 )
-frame = 0
+frame = 3
 
 [node name="grass_front135" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 448, -385 )
-frame = 0
+frame = 3
 
 [node name="grass_front136" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 432, -369 )
-frame = 0
+frame = 3
 
 [node name="grass_front137" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 416, -369 )
-frame = 0
+frame = 3
 
 [node name="grass_front138" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 400, -353 )
-frame = 3
 
 [node name="grass_front139" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 384, -337 )
-frame = 3
 
 [node name="grass_front140" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 368, -337 )
-frame = 0
+frame = 3
 
 [node name="grass_front141" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 352, -353 )
-frame = 0
+frame = 3
 
 [node name="grass_front142" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 336, -353 )
-frame = 1
+frame = 0
 
 [node name="grass_front143" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 320, -353 )
-frame = 1
+frame = 0
 
 [node name="grass_front144" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 304, -353 )
-frame = 0
+frame = 3
 
 [node name="grass_front145" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 288, -337 )
-frame = 0
+frame = 3
 
 [node name="grass_front146" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 272, -337 )
-frame = 0
+frame = 3
 
 [node name="grass_front147" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 256, -337 )
-frame = 0
+frame = 3
 
 [node name="grass_front148" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 240, -321 )
-frame = 3
 
 [node name="grass_front149" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 224, -321 )
-frame = 3
 
 [node name="grass_front150" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 208, -321 )
-frame = 0
+frame = 3
 
 [node name="grass_front151" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 192, -321 )
-frame = 0
+frame = 3
 
 [node name="grass_front152" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 176, -321 )
-frame = 1
+frame = 0
 
 [node name="grass_front153" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 160, -321 )
-frame = 0
+frame = 3
 
 [node name="grass_front154" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 144, -305 )
-frame = 0
+frame = 3
 
 [node name="grass_front155" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 128, -289 )
-frame = 3
 
 [node name="grass_front156" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 112, -289 )
-frame = 3
 
 [node name="grass_front157" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 96, -257 )
-frame = 0
+frame = 3
 
 [node name="grass_front158" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 80, -225 )
-frame = 1
+frame = 0
 
 [node name="grass_front159" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 0, -241 )
-frame = 1
+frame = 0
 
 [node name="grass_front160" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -16, -241 )
-frame = 0
+frame = 3
 
 [node name="grass_front161" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -32, -241 )
-frame = 3
 
 [node name="grass_front162" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -48, -241 )
-frame = 0
+frame = 3
 
 [node name="grass_front163" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -64, -385 )
-frame = 0
+frame = 3
 
 [node name="grass_front164" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -80, -385 )
-frame = 0
+frame = 3
 
 [node name="grass_front165" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -96, -385 )
-frame = 0
+frame = 3
 
 [node name="grass_front166" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -112, -385 )
-frame = 1
+frame = 0
 
 [node name="grass_front167" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -112, -97 )
-frame = 0
+frame = 3
 
 [node name="grass_front168" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -96, -97 )
-frame = 0
+frame = 3
 
 [node name="grass_front169" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -112, -197 )
-frame = 3
 flip_v = true
 
 [node name="grass_front170" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -96, -181 )
-frame = 3
 flip_v = true
 
 [node name="grass_front171" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -80, -165 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front172" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -64, -149 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front173" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -48, -133 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front174" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -32, -149 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front175" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -16, -165 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front176" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 0, -181 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front177" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 80, -181 )
-frame = 3
 flip_v = true
 
 [node name="grass_front178" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 96, -181 )
-frame = 3
 flip_v = true
 
 [node name="grass_front179" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 112, -197 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front180" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 128, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front181" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 144, -227 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front182" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 160, -245 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front183" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 176, -229 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front184" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 192, -229 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front185" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 208, -245 )
-frame = 3
 flip_v = true
 
 [node name="grass_front186" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 224, -261 )
-frame = 3
 flip_v = true
 
 [node name="grass_front187" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 240, -261 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front188" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 256, -245 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front189" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 272, -245 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front190" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 288, -229 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front191" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 304, -229 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front192" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 320, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front193" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 336, -213 )
-frame = 3
 flip_v = true
 
 [node name="grass_front194" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 352, -229 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front195" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 368, -229 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front196" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 384, -229 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front197" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 400, -245 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front198" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 416, -245 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front199" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 432, -245 )
-frame = 3
 flip_v = true
 
 [node name="grass_front200" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 448, -245 )
-frame = 3
 flip_v = true
 
 [node name="grass_front201" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 464, -245 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front202" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 480, -229 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front203" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 496, -229 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front204" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 512, -229 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front205" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 528, -229 )
-frame = 3
 flip_v = true
 
 [node name="grass_front206" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 544, -245 )
-frame = 3
 flip_v = true
 
 [node name="grass_front207" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 624, -261 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front208" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 640, -229 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front209" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 656, -229 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front210" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 672, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front211" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 688, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front212" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 704, -213 )
-frame = 3
 flip_v = true
 
 [node name="grass_front213" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 720, -229 )
-frame = 3
 flip_v = true
 
 [node name="grass_front214" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 736, -229 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front215" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 752, -245 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front216" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 768, -245 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front217" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 784, -245 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front218" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 800, -245 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front219" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 816, -229 )
-frame = 3
 flip_v = true
 
 [node name="grass_front220" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 832, -213 )
-frame = 3
 flip_v = true
 
 [node name="grass_front221" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 848, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front222" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 864, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front223" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 880, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front224" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 896, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front225" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 912, -213 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front226" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 928, -213 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front227" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 944, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front228" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 960, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front229" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 976, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front230" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 992, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front231" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1008, -197 )
-frame = 3
 flip_v = true
 
 [node name="grass_front232" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1024, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front233" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1040, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front234" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1056, -197 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front235" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1072, -181 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front236" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1088, -195 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front237" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1104, -213 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front238" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1120, -213 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front239" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1136, -213 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front240" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1152, -197 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front241" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1168, -197 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front242" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1184, -181 )
-frame = 3
 flip_v = true
 
 [node name="grass_front243" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1200, -181 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front244" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1216, -181 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front245" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1616, -149 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front246" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1600, -117 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front247" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1584, -101 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front248" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1568, -85 )
-frame = 3
 flip_v = true
 
 [node name="grass_front249" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1552, -69 )
-frame = 3
 flip_v = true
 
 [node name="grass_front250" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1536, -53 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front251" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1520, -69 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front252" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1504, -85 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front253" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1488, -85 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front254" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1472, -69 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front255" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1456, -53 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front256" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1440, -37 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front257" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1424, -53 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front258" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1408, -69 )
-frame = 3
 flip_v = true
 
 [node name="grass_front259" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1392, -69 )
-frame = 3
 flip_v = true
 
 [node name="grass_front260" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1376, -69 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front261" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1360, -69 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front262" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1344, -69 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front263" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1328, -53 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front264" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1312, -37 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front265" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1296, -37 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front266" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1280, -37 )
-frame = 3
 flip_v = true
 
 [node name="grass_front267" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1264, -37 )
-frame = 3
 flip_v = true
 
 [node name="grass_front268" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1248, -53 )
-frame = 3
 flip_v = true
 
 [node name="grass_front269" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1232, -37 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front270" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1216, -21 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front271" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1200, -21 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front272" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1184, -37 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front273" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1168, -53 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front274" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1152, -69 )
-frame = 3
 flip_v = true
 
 [node name="grass_front275" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1136, -69 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front276" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1120, -69 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front277" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1104, -69 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front278" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1088, -69 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front279" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1072, -69 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front280" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1056, -53 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front281" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1040, -53 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front282" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1024, -53 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front283" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 1008, -37 )
-frame = 3
 flip_v = true
 
 [node name="grass_front284" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 992, -37 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front285" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 976, -21 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front286" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 960, -21 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front287" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 944, -21 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front288" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 928, -5 )
-frame = 3
 flip_v = true
 
 [node name="grass_front289" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 912, -5 )
-frame = 3
 flip_v = true
 
 [node name="grass_front290" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 896, -5 )
-frame = 3
 flip_v = true
 
 [node name="grass_front291" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 880, -21 )
-frame = 3
 flip_v = true
 
 [node name="grass_front292" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 864, -21 )
-frame = 3
 flip_v = true
 
 [node name="grass_front293" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 848, -37 )
-frame = 3
 flip_v = true
 
 [node name="grass_front294" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 832, -37 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front295" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 816, -21 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front296" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 800, -21 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front297" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 784, -5 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front298" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 768, -5 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front299" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 752, 11 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front300" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 736, 11 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front301" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 720, 27 )
-frame = 3
 flip_v = true
 
 [node name="grass_front302" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 704, 27 )
-frame = 3
 flip_v = true
 
 [node name="grass_front303" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 688, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front304" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 672, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front305" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 656, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front306" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 640, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front307" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 624, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front308" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 608, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front309" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 592, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front310" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 576, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front311" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 560, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front312" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 544, 27 )
-frame = 3
 flip_v = true
 
 [node name="grass_front313" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 528, 27 )
-frame = 3
 flip_v = true
 
 [node name="grass_front314" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 512, 27 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front315" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 496, 27 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front316" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 480, 27 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front317" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 464, 27 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front318" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 448, 27 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front319" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 432, 11 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front320" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 416, 11 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front321" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 400, 11 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front322" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 384, 11 )
-frame = 3
 flip_v = true
 
 [node name="grass_front323" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 368, 11 )
-frame = 3
 flip_v = true
 
 [node name="grass_front324" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 352, 27 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front325" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 336, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front326" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 320, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front327" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 304, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front328" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 288, 43 )
-frame = 3
 flip_v = true
 
 [node name="grass_front329" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 272, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front330" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 256, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front331" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 240, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front332" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 224, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front333" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 208, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front334" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 192, 43 )
-frame = 3
 flip_v = true
 
 [node name="grass_front335" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 176, 43 )
-frame = 3
 flip_v = true
 
 [node name="grass_front336" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 160, 43 )
-frame = 3
 flip_v = true
 
 [node name="grass_front337" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 144, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front338" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 128, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front339" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 112, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front340" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 96, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front341" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 80, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front342" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 64, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front343" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 48, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front344" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 32, 43 )
-frame = 3
 flip_v = true
 
 [node name="grass_front345" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 16, 43 )
-frame = 3
 flip_v = true
 
 [node name="grass_front346" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( 0, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front347" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -16, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="grass_front348" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -32, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front349" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -48, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front350" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -64, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front351" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -80, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front352" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -96, 43 )
-frame = 1
+frame = 0
 flip_v = true
 
 [node name="grass_front353" parent="ground/grass_front" instance=ExtResource( 22 )]
 position = Vector2( -112, 43 )
-frame = 0
+frame = 3
 flip_v = true
 
 [node name="ground_mid" type="TileMap" parent="ground"]
@@ -3761,248 +3678,257 @@ script = ExtResource( 20 )
 [node name="grass-back" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 176, 17 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back2" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 192, 17 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back3" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 304, 1 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back4" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 320, 1 )
 z_index = -4
+frame = 0
 
 [node name="grass-back5" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 336, 1 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back6" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 352, -15 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back7" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 416, -43 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back8" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 432, -43 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back9" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 448, -43 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back10" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 464, -43 )
 z_index = -4
+frame = 0
 
 [node name="grass-back11" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 528, -15 )
 z_index = -4
+frame = 0
 
 [node name="grass-back12" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 544, 1 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back13" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 560, 1 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back14" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 576, 1 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back15" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 592, 1 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back16" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 656, -47 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back17" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 672, -31 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back18" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 688, -31 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back19" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 880, -63 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back20" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 896, -47 )
 z_index = -4
+frame = 0
 
 [node name="grass-back21" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 912, -47 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back22" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 928, -47 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back23" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 912, -111 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back24" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 928, -111 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back25" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 944, -111 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back26" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 960, -111 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back27" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 1056, -111 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back28" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 1072, -95 )
 z_index = -4
+frame = 0
 
 [node name="grass-back29" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 1088, -95 )
 z_index = -4
+frame = 0
 
 [node name="grass-back30" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 1104, -95 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back31" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 1120, -95 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back32" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 1136, -111 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back33" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 1504, -127 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back34" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 1520, -95 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back35" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 1536, -95 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back36" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 1552, -95 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back37" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 1568, -111 )
 z_index = -4
+frame = 0
 
 [node name="grass-back38" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 880, -255 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back39" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 896, -239 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back40" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 912, -239 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back41" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 928, -239 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back42" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 720, -287 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back43" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 736, -287 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back44" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 752, -287 )
 z_index = -4
+frame = 0
 
 [node name="grass-back45" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 768, -287 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back46" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 480, -287 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back47" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 464, -287 )
 z_index = -4
-frame = 0
+frame = 3
 
 [node name="grass-back48" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 448, -287 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back49" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( 432, -287 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back50" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( -80, -239 )
 z_index = -4
-frame = 3
+frame = 2
 
 [node name="grass-back51" parent="ground/Water/grass_underwater" instance=ExtResource( 19 )]
 position = Vector2( -96, -255 )
 z_index = -4
+frame = 0
 
 [node name="jump_carrot" type="Node2D" parent="."]
 position = Vector2( 528, -98 )
@@ -4188,31 +4114,35 @@ script = ExtResource( 20 )
 [node name="thicc" type="Node2D" parent="trees"]
 
 [node name="thicc_tree" parent="trees/thicc" instance=ExtResource( 17 )]
-frame = 1
+frame = 8
 
 [node name="thicc_tree2" parent="trees/thicc" instance=ExtResource( 17 )]
 position = Vector2( 600, -128 )
-frame = 1
+frame = 8
 
 [node name="thicc_tree3" parent="trees/thicc" instance=ExtResource( 17 )]
 position = Vector2( 704, -136 )
-frame = 0
+frame = 8
 
 [node name="thicc_tree4" parent="trees/thicc" instance=ExtResource( 17 )]
 position = Vector2( 1520, -248 )
+frame = 8
 
 [node name="thicc_tree5" parent="trees/thicc" instance=ExtResource( 17 )]
 position = Vector2( 752, -416 )
+frame = 8
 
 [node name="thicc_tree6" parent="trees/thicc" instance=ExtResource( 17 )]
 position = Vector2( 592, -416 )
+frame = 8
 
 [node name="thicc_tree7" parent="trees/thicc" instance=ExtResource( 17 )]
 position = Vector2( 280, -384 )
+frame = 8
 
 [node name="thicc_tree8" parent="trees/thicc" instance=ExtResource( 17 )]
 position = Vector2( 208, -344 )
-frame = 1
+frame = 8
 
 [node name="skinny" type="Node2D" parent="trees"]
 

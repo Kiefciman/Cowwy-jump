@@ -27,7 +27,6 @@ animations = [ {
 } ]
 
 [node name="bush" type="AnimatedSprite"]
-self_modulate = Color( 0.933333, 0.6, 0.6, 1 )
 material = SubResource( 30 )
 position = Vector2( 84, -28 )
 scale = Vector2( 0.8, 0.8 )

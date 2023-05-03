@@ -47,7 +47,7 @@ void fragment(){
 	float myheight = height+tide*sin(newtime+5.0*UV.x-8.0*UV.y);
 	float shadowheight = height+tide*1.3*cos(newtime+2.0*UV.x-2.0*UV.y);
 	float withinFoam = step(myheight, fbmval)*step(fbmval, myheight + foamthickness);
-	float shadow = (1.0-withinFoam)*step(shadowheight, fbmvalshadow)*step(fbmvalshadow, shadowheight + foamthickness * 0.7);
+	float shadow = (1.0-withinFoam)*step(shadowheight, fbmvalshadow)*step(fbmvalshadow, shadowheight + foamthickness * 0.5);
 	COLOR = withinFoam*FOAM_COL + shadow*WATER2_COL + ((1.0-withinFoam)*(1.0-shadow))*WATER_COL;
 	//COLOR = vec4(1.0,1.0,1.0,fbmval);
 }

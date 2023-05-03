@@ -17,8 +17,6 @@ animations = [ {
 [node name="grass-back" type="AnimatedSprite"]
 position = Vector2( 8, -24 )
 frames = SubResource( 5 )
-frame = 1
-playing = true
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 position = Vector2( 0, 4.17233e-07 )

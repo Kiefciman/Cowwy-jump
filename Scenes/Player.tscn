@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/cow/idle/cow2.png" type="Texture" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://Assets/cow/running_underwater/cow5.png" type="Texture" id=28]
 [ext_resource path="res://Assets/font.theme" type="Theme" id=29]
 [ext_resource path="res://Assets/cow/idle_underwater/cow5.png" type="Texture" id=30]
+[ext_resource path="res://Scenes/apple.tscn" type="PackedScene" id=31]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -55,8 +56,8 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=10]
-radius = 7.0
-height = 10.0
+radius = 5.99998
+height = 8.00004
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 9, 6.5 )
@@ -106,7 +107,6 @@ RichTextLabel/colors/default_color = Color( 0.156863, 0.47451, 0.886275, 1 )
 RichTextLabel/fonts/normal_font = SubResource( 4 )
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 232, -56 )
 z_index = -1
 script = ExtResource( 1 )
 __meta__ = {
@@ -115,26 +115,28 @@ __meta__ = {
 initial_speed = 90
 initial_jump = 200
 gravity = 1500
+apple_scene = ExtResource( 31 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -8 )
+position = Vector2( -14, -24 )
 frames = SubResource( 1 )
 animation = "iddle"
-frame = 6
+frame = 3
 playing = true
+centered = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
-pause_mode = 2
-physics_interpolation_mode = 2
-process_priority = 1
 current = true
-zoom = Vector2( 0.25, 0.25 )
 process_mode = 0
 limit_left = 0
 limit_top = -600
 limit_right = 1680
 limit_bottom = 60
 smoothing_speed = 2.0
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -1, 0 )
@@ -212,7 +214,7 @@ text = "     U ded lol"
 scroll_active = false
 
 [node name="Sprite" type="Sprite" parent="UI/u_ded_lol/Panel"]
-position = Vector2( 28.1, 10 )
 scale = Vector2( 0.094, 0.09 )
 z_index = -1
 texture = ExtResource( 16 )
+centered = false

@@ -50,10 +50,11 @@ playing = true
 
 [node name="Sprite" type="Sprite" parent="."]
 material = SubResource( 31 )
-position = Vector2( 0, -16.25 )
+position = Vector2( 0, -14 )
 texture = ExtResource( 1 )
+centered = false
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-position = Vector2( 1.25, 4.375 )
-scale = Vector2( 3.125, 1.1875 )
+position = Vector2( 35, 35 )
+scale = Vector2( 3.5, 1.5 )
 script = ExtResource( 5 )

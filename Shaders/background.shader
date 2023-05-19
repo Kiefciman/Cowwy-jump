@@ -9,7 +9,7 @@ uniform float waterdeep = 0.3;
 uniform vec4 WATER_COL : hint_color =  vec4(0.04, 0.38, 0.88, 1.0);
 uniform vec4 WATER2_COL : hint_color =  vec4(0.04, 0.35, 0.78, 1.0);
 uniform vec4 FOAM_COL : hint_color = vec4(0.8125, 0.9609, 0.9648, 1.0);
-
+uniform float speed = 1.0;
 
 float rand(vec2 input){
 	return fract(sin(dot(input,vec2(23.53,44.0)))*42350.45);

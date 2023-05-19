@@ -24,7 +24,7 @@ func _process(delta):
 				camera.current = true
 				camera_timer.start()
 				camera_timer.paused = false
-				camera.zoom = Vector2(0.45, 0.45)
+				camera.zoom = Vector2(1, 1)
 		elif challenge_accepted == true:
 			if Input.is_action_pressed("f"):
 				$Panel.visible = false
@@ -34,7 +34,7 @@ func _process(delta):
 func _on_Timer_timeout():
 	camera_timer2.start()
 	camera_timer2.paused = false
-	camera.zoom = Vector2(0.25, 0.25)
+	camera.zoom = Vector2(0.5, 0.5)
 
 func _on_Timer2_timeout():
 	camera.current = false

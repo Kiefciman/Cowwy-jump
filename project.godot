@@ -29,6 +29,31 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/godot_editor_discord_presence/Discord RPC/util/IPCUtil.gd"
 }, {
+"base": "Resource",
+"class": "RMS2D_Material",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/RMSmartShapeMaterial.gd"
+}, {
+"base": "Reference",
+"class": "RMS2D_VertexProperties",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/LEGACY_vertex_properties.gd"
+}, {
+"base": "Reference",
+"class": "RMS2D_VertexPropertiesArray",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/LEGACY_vertex_properties_array.gd"
+}, {
+"base": "Node2D",
+"class": "RMSmartShape2D",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/RMSmartShape2D.gd"
+}, {
+"base": "Node2D",
+"class": "RMSmartShapeAnchor2D",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/RMSmartShapeAnchor2D.gd"
+}, {
 "base": "Reference",
 "class": "RichPresence",
 "language": "GDScript",
@@ -43,6 +68,116 @@ _global_script_classes=[ {
 "class": "RichPresenceModule",
 "language": "GDScript",
 "path": "res://addons/godot_editor_discord_presence/Discord RPC/ipc/module/rich presence/RichPreseneModule.gd"
+}, {
+"base": "Node",
+"class": "SS2D_Common_Functions",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/common_functions.gd"
+}, {
+"base": "Reference",
+"class": "SS2D_Edge",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/edge.gd"
+}, {
+"base": "Reference",
+"class": "SS2D_IndexMap",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/index_map.gd"
+}, {
+"base": "Resource",
+"class": "SS2D_Material_Edge",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/materials/edge_material.gd"
+}, {
+"base": "Resource",
+"class": "SS2D_Material_Edge_Metadata",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/materials/edge_material_metadata.gd"
+}, {
+"base": "Resource",
+"class": "SS2D_Material_Shape",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/materials/shape_material.gd"
+}, {
+"base": "Reference",
+"class": "SS2D_Mesh",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/mesh.gd"
+}, {
+"base": "Resource",
+"class": "SS2D_NormalRange",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/normal_range.gd"
+}, {
+"base": "VBoxContainer",
+"class": "SS2D_NormalRangeEditor",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/editors/NormalRangeEditor/NormalRangeEditor.gd"
+}, {
+"base": "EditorProperty",
+"class": "SS2D_NormalRangeEditorProperty",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/editors/NormalRangeEditor/NormalRangeEditorProperty.gd"
+}, {
+"base": "Resource",
+"class": "SS2D_Point",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/point.gd"
+}, {
+"base": "Resource",
+"class": "SS2D_Point_Array",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/point_array.gd"
+}, {
+"base": "Reference",
+"class": "SS2D_Quad",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/quad.gd"
+}, {
+"base": "Node2D",
+"class": "SS2D_Shape_Anchor",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/shape_anchor.gd"
+}, {
+"base": "Node2D",
+"class": "SS2D_Shape_Base",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/shape_base.gd"
+}, {
+"base": "SS2D_Shape_Base",
+"class": "SS2D_Shape_Closed",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/shape_closed.gd"
+}, {
+"base": "Node2D",
+"class": "SS2D_Shape_Combine_Union",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/shape_combine_union.gd"
+}, {
+"base": "SS2D_Shape_Base",
+"class": "SS2D_Shape_Meta",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/shape_meta.gd"
+}, {
+"base": "SS2D_Shape_Base",
+"class": "SS2D_Shape_Open",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/shape_open.gd"
+}, {
+"base": "Node2D",
+"class": "SS2D_Shape_Render",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/shapes/shape_render.gd"
+}, {
+"base": "Resource",
+"class": "SS2D_Strings",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/strings.gd"
+}, {
+"base": "Resource",
+"class": "SS2D_VertexProperties",
+"language": "GDScript",
+"path": "res://addons/rmsmartshape/vertex_properties.gd"
 }, {
 "base": "Node",
 "class": "ScreenRecorder",
@@ -79,9 +214,36 @@ _global_script_class_icons={
 "DiscordRPCEnum": "",
 "DiscordRPCUtil": "",
 "IPCUtil": "",
+"RMS2D_Material": "",
+"RMS2D_VertexProperties": "",
+"RMS2D_VertexPropertiesArray": "",
+"RMSmartShape2D": "res://addons/rmsmartshape/assets/LEGACY_shape.png",
+"RMSmartShapeAnchor2D": "res://addons/rmsmartshape/assets/LEGACY_shape_anchor.png",
 "RichPresence": "",
 "RichPresenceButton": "",
 "RichPresenceModule": "",
+"SS2D_Common_Functions": "",
+"SS2D_Edge": "",
+"SS2D_IndexMap": "",
+"SS2D_Material_Edge": "",
+"SS2D_Material_Edge_Metadata": "",
+"SS2D_Material_Shape": "",
+"SS2D_Mesh": "",
+"SS2D_NormalRange": "",
+"SS2D_NormalRangeEditor": "",
+"SS2D_NormalRangeEditorProperty": "",
+"SS2D_Point": "",
+"SS2D_Point_Array": "",
+"SS2D_Quad": "",
+"SS2D_Shape_Anchor": "res://addons/rmsmartshape/assets/Anchor.svg",
+"SS2D_Shape_Base": "",
+"SS2D_Shape_Closed": "res://addons/rmsmartshape/assets/closed_shape.png",
+"SS2D_Shape_Combine_Union": "",
+"SS2D_Shape_Meta": "res://addons/rmsmartshape/assets/meta_shape.png",
+"SS2D_Shape_Open": "res://addons/rmsmartshape/assets/open_shape.png",
+"SS2D_Shape_Render": "",
+"SS2D_Strings": "",
+"SS2D_VertexProperties": "",
 "ScreenRecorder": "",
 "SmoothPath": "",
 "StreamPeerUnix": "",
@@ -93,26 +255,42 @@ _global_script_class_icons={
 [application]
 
 config/name="Cowwy Jump"
-run/main_scene="res://Scenes/Node2D.tscn"
+run/main_scene="res://Scenes/Loading.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+global="*res://Scripts/global.gd"
 
 [debug]
 
 settings/fps/force_fps=60
 
+[discord_presence]
+
+first_button/label="Kiefciman's Github"
+first_button/url="https://github.com/Kiefciman"
+settings/change_time_per_screen=true
+
 [display]
 
-window/size/width=800
+window/size/width=640
+window/size/height=360
+window/size/resizable=false
 window/size/fullscreen=true
 window/vsync/vsync_via_compositor=true
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+window/stretch/shrink=2.0
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/godot_editor_discord_presence/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/godot_editor_discord_presence/plugin.cfg", "res://addons/gut/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg" )
 
 [global]
 
 vsync=true
+cpu=true
 
 [importer_defaults]
 
@@ -191,13 +369,16 @@ f={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":70,"unicode":0,"echo":false,"script":null)
  ]
 }
-
-[physics]
-
-common/physics_fps=70
-common/physics_jitter_fix=10.0
-2d/physics_engine="GodotPhysics"
-2d/thread_model=2
+debug={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":96,"unicode":0,"echo":false,"script":null)
+ ]
+}
+shoot={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":3,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
 
 [rendering]
 
@@ -206,10 +387,11 @@ quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=0
 2d/snapping/use_gpu_pixel_snap=true
-threads/thread_model=2
 misc/lossless_compression/force_png=true
 quality/reflections/texture_array_reflections=false
 quality/depth_prepass/enable=false
+2d/options/use_software_skinning=false
+2d/options/ninepatch_mode=0
 environment/default_clear_color=Color( 0.356863, 0.431373, 0.882353, 1 )
 quality/depth/hdr=false
 environment/default_environment="res://default_env.tres"

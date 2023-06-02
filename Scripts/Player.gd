@@ -1,10 +1,7 @@
-extends KinematicBody2D
+extends RigidBody2D
 
-# Variables
-export var initial_speed: int
-export var initial_jump: int
-export var gravity: int
-var velocity: Vector2 = Vector2()
+export var base_speed: int = 100
+export var base_jump: int = 150
 var speed_upgrade = 0
 var jump_upgrade = 0
 var butthole_capacity = 0
@@ -18,106 +15,68 @@ var left_exited = false
 var right_entered = false
 var right_exited = false
 export var apple_scene: PackedScene
+export var apple_texture: Resource
+var can_go_right = true
+var can_go_left = true
 
-# Called when the node enters the scene tree for the first time.
+func pickup(target, item, distance = 20):
+	if $face.global_position.distance_to(target.global_position) < distance:
+		if Input.is_action_just_pressed("e"):
+			target.queue_free()
+			$item.texture = item
+
 func _ready():
+	$item.texture = apple_texture
 	$AnimatedSprite.animation = 'iddle'
-#	$UI/butthole_capacity/Panel/ProgressBar.value = butthole_capacity
 	
-#	var speed = initial_speed + speed_upgrade
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta):
-#	print("li ", left_entered, " lo ", left_exited, " ri ", right_entered, " ro ", right_exited)
-	#$Camera2D.position = $Camera2D.position.round()
-#	if get_global_mouse_position().x >= self.position.x:
-	#$Camera2D.position.x = get_global_mouse_position().distance_to(self.position) * delta * 5
-#	else:
-#		$Camera2D.position.x = -get_global_mouse_position().distance_to(self.position) * delta * 5
-#	if get_global_mouse_position().y <= self.position.y:
-#		$Camera2D.position.y = -get_global_mouse_position().distance_to(self.position) * delta * 5
-#	else:
-#		$Camera2D.position.y = get_global_mouse_position().distance_to(self.position) * delta * 5
-	#$Camera2D.position.x = lerp(self.position.x, get_global_mouse_position().distance_to(self.position) / 4, 0.3)
-	$Camera2D.force_update_scroll()
-	#$Camera2D.align()
-	$UI/butthole_capacity/Panel/ProgressBar.value = butthole_capacity
+func _integrate_forces(state):
 	if !dead and !paused:
-		var jump = initial_jump + jump_upgrade * 60
-		var speed = initial_speed + speed_upgrade * 15
-
-	# Reset horizontal velocity
-#		velocity.x = 0
-
-	# Gravity
-		velocity.y += gravity * delta
-
-	# Controls
-		if Input.is_action_pressed("a") and !Input.is_action_pressed("d"):
+		var jump = base_jump + jump_upgrade * 50
+		var speed = base_speed + speed_upgrade * 15
+		
+		if Input.is_action_pressed("a") and !Input.is_action_pressed("d") and can_go_left:
 			if Input.is_action_pressed("speed") and speed_upgrade > 0:
-				velocity.x = -speed
+				self.linear_velocity.x = -speed
 			else:
-				if velocity.x > -30:
-					velocity.x = -30
-				if velocity.x >= -initial_speed:
-					velocity.x -= (initial_speed / 0.5) * delta
-				else:
-					velocity.x = -initial_speed
-#					velocity.x = -initial_speed
-#				velocity.x = lerp(velocity.x, -initial_speed, 1.5)
-#				velocity.x = min(velocity.x - 0.1, -initial_speed)
+				self.linear_velocity.x = -base_speed
 			$AnimatedSprite.flip_h = true
-#			$Camera2D.position.x = -56
-		elif Input.is_action_pressed("d") and !Input.is_action_pressed("a"):
+				
+		if Input.is_action_pressed("d") and !Input.is_action_pressed("a") and can_go_right:
 			if Input.is_action_pressed("speed") and speed_upgrade > 0:
-				velocity.x = speed
+				self.linear_velocity.x = speed
 			else:
-				if velocity.x < 30:
-					velocity.x = 30
-				if velocity.x <= initial_speed:
-					velocity.x += (initial_speed / 0.5) * delta
-				else:
-					velocity.x = initial_speed
-#				velocity.x = lerp(velocity.x, initial_speed, 1.5)
-#				velocity.x = max(velocity.x + 0.1, initial_speed)
+				self.linear_velocity.x = base_speed
 			$AnimatedSprite.flip_h = false
-#			$Camera2D.position.x = 56
-		else:
-			velocity.x *= 0.95
-			if $AnimatedSprite.flip_h == false:
-				if velocity.x < initial_speed / 1.5:
-					velocity.x = 0
-			if $AnimatedSprite.flip_h == true:
-				if -velocity.x < initial_speed / 1.5:
-					velocity.x = 0
-		if Input.is_action_just_pressed("space") and is_on_floor():
+				
+		if Input.is_action_just_pressed("space"):
+			#if self.linear_velocity.y > -10 or self.linear_velocity.y < 10:
 			if Input.is_action_pressed("jumpboost"):
-				velocity.y -= jump * delta * 60
+				self.linear_velocity.y = -jump
 			else:
-				velocity.y -= initial_jump * delta * 60
-		
-#		if $AnimatedSprite.flip_h == false and is_on_floor():
-#			if Input.is_action_pressed("d") == false:
-#				velocity.x += initial_speed / 10
+				self.linear_velocity.y = -base_jump
+		self.angular_velocity = 0
+		self.rotation_degrees = 0
+
+#func _physics_process(delta):
+		$UI/butthole_capacity/Panel/ProgressBar.value = butthole_capacity
+		if !dead and !paused:
+
+			if Input.is_action_just_released("scroll_up"):
+				$Camera2D.zoom -= Vector2(0.1, 0.1)
+			if Input.is_action_just_released("scroll_down") and $Camera2D.zoom <= Vector2(1.2, 1.2):
+				$Camera2D.zoom += Vector2(0.1, 0.1)
 			
-	# Apply the velocity
-#		velocity.x = velocity.x * 70 * delta
-		velocity = move_and_slide(velocity, Vector2.UP)
-#		print("velocity.x = ", velocity.x)
-		
-	# Changing the Animation
-		if !underwater:
-			if velocity.x != 0:
-				$AnimatedSprite.animation = 'running'
-			elif velocity.x == 0:
-				$AnimatedSprite.animation = 'iddle'
-		if underwater:
-#			$UI/butthole_capacity/Panel/ProgressBar.value += 0.04
-			butthole_capacity += 0.04
-			if velocity.x != 0:
-				$AnimatedSprite.animation = 'running_underwater'
-			elif velocity.x == 0:
-				$AnimatedSprite.animation = 'iddle_underwater'
+			if !underwater:
+				if self.linear_velocity.x != 0:
+					$AnimatedSprite.animation = 'running'
+				elif self.linear_velocity.x == 0:
+					$AnimatedSprite.animation = 'iddle'
+			if underwater:
+				butthole_capacity += 0.04
+				if self.linear_velocity.x != 0:
+					$AnimatedSprite.animation = 'running_underwater'
+				elif self.linear_velocity.x == 0:
+					$AnimatedSprite.animation = 'iddle_underwater'
 
 		if $UI/butthole_capacity/Panel/ProgressBar.value == 100:
 			dead = true
@@ -126,12 +85,43 @@ func _physics_process(delta):
 			$UI/u_ded_lol.visible = true
 			$UI/butthole_capacity.visible = false
 			
-		if Input.is_action_just_pressed("shoot"):
+			
+		if $AnimatedSprite.flip_h == true:
+			$item.position.x = -10
+			$item .flip_h = true
+		else:
+			$item.position.x = 8
+			$item.flip_h = false
+			
+		for apple in get_node("/root/Level/apples").get_children():
+			pickup(apple, apple_texture)
+			
+func _physics_process(delta):
+#	$Camera2D.force_update_scroll()
+	if Input.is_action_just_pressed("shoot"):
+		if $item.texture == apple_texture:
+			$item.texture = null
 			var apple = apple_scene.instance()
-			get_parent().add_child(apple)
+			get_node("/root/Level/apples").add_child(apple)
+			apple.remove_from_group("objects")
 			apple.set_as_toplevel(true)
-			apple.global_position = self.global_position
-
+			apple.global_position = $item.global_position
+			apple.linear_velocity.x = (get_global_mouse_position().x - self.global_position.x) * 1.2
+			apple.linear_velocity.y = (get_global_mouse_position().y - self.global_position.y) * 2.5
+			if apple.linear_velocity.y < -210:
+				apple.linear_velocity.y = -210
+			if apple.linear_velocity.y > 210:
+				apple.linear_velocity.y = 210
+			if apple.linear_velocity.x < -140:
+				apple.linear_velocity.x = -140
+			if apple.linear_velocity.x > 140:
+				apple.linear_velocity.x = 140
+#				if apple.linear_velocity > Vector2(0, 0):
+			apple.add_to_group("objects")
+#	print(mass)
+#	if $RayCast2D.is_colliding():
+#		print($RayCast2D.get_collider().get_class())
+			
 func _on_Area2D_area_entered(area):
 	get_parent().get_node("jump_carrot").queue_free()
 	jump_upgrade += 1
@@ -226,3 +216,23 @@ func _on_help_area_entered(area):
 func _on_help_area_exited(area):
 	get_parent().get_node("help_panels/help_panel_1/Panel2").visible = false
 	get_parent().get_node("help_panels/help_panel_1/Panel").visible = false
+
+func _on_right_body_entered(body):
+	if body.get_class() == "TileMap":
+		can_go_right = false
+		self.linear_velocity.x = 0
+
+
+func _on_right_body_exited(body):
+	if body.get_class() == "TileMap":
+		can_go_right = true
+
+
+func _on_left_body_entered(body):
+	if body.get_class() == "TileMap":
+		can_go_left = false
+		self.linear_velocity.x = 0
+
+func _on_left_body_exited(body):
+	if body.get_class() == "TileMap":
+		can_go_left = true

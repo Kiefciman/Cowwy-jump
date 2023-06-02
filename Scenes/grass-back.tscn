@@ -9,6 +9,7 @@
 
 [sub_resource type="ShaderMaterial" id=6]
 shader = ExtResource( 5 )
+shader_param/t = 0.0
 shader_param/speed = 0.03
 shader_param/minStrength = 0.05
 shader_param/maxStrength = 0.01

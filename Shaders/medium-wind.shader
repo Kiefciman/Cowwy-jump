@@ -14,6 +14,7 @@ shader_type canvas_item;
 render_mode blend_mix;
 
 // Wind settings.
+uniform float t = 0.0;
 uniform float speed = 0.03;
 uniform float minStrength : hint_range(0.0, 1.0) = 0.05;
 uniform float maxStrength : hint_range(0.0, 1.0) = 0.01;
@@ -37,7 +38,11 @@ float getWind(vec2 vertex, vec2 uv, float time){
 
 void vertex() {
     vec4 pos = WORLD_MATRIX * vec4(0.0, 0.0, 0.0, 1.0);
-    float time = TIME * speed + offset;
+	float time;
+	if(t == 0.0)
+    	time = TIME * speed + offset;
+	else
+		time = t * speed + offset;
     //float time = TIME * speed + pos.x * pos.y  ; not working when moving...
     VERTEX.x += getWind(VERTEX.xy, UV, time);
 }

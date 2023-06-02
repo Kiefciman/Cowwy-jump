@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/cow/idle/cow2.png" type="Texture" id=2]
@@ -30,7 +30,10 @@
 [ext_resource path="res://Assets/cow/running_underwater/cow5.png" type="Texture" id=28]
 [ext_resource path="res://Assets/font.theme" type="Theme" id=29]
 [ext_resource path="res://Assets/cow/idle_underwater/cow5.png" type="Texture" id=30]
-[ext_resource path="res://Scenes/apple.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Assets/items/apple.png" type="Texture" id=31]
+[ext_resource path="res://Scenes/apple.tscn" type="PackedScene" id=32]
+
+[sub_resource type="PhysicsMaterial" id=10]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -55,12 +58,11 @@ animations = [ {
 "speed": 10.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=10]
-radius = 5.99998
-height = 8.00004
+[sub_resource type="CircleShape2D" id=14]
+radius = 6.08276
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 9, 6.5 )
+extents = Vector2( 9, 6 )
 
 [sub_resource type="StyleBoxFlat" id=8]
 bg_color = Color( 0.223529, 0.223529, 0.223529, 0.505882 )
@@ -106,27 +108,40 @@ ProgressBar/styles/fg = SubResource( 3 )
 RichTextLabel/colors/default_color = Color( 0.156863, 0.47451, 0.886275, 1 )
 RichTextLabel/fonts/normal_font = SubResource( 4 )
 
-[node name="Player" type="KinematicBody2D"]
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 2.5, 4.5 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 2.5, 4.5 )
+
+[node name="Player" type="RigidBody2D"]
 z_index = -1
+mass = 500.0
+physics_material_override = SubResource( 10 )
+gravity_scale = 4.0
+continuous_cd = 2
+contacts_reported = 5
+contact_monitor = true
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
-initial_speed = 90
-initial_jump = 200
-gravity = 1500
-apple_scene = ExtResource( 31 )
+base_speed = 55
+base_jump = 140
+apple_scene = ExtResource( 32 )
+apple_texture = ExtResource( 31 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -14, -24 )
 frames = SubResource( 1 )
 animation = "iddle"
-frame = 3
+frame = 7
 playing = true
 centered = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+zoom = Vector2( 0.5, 0.5 )
 process_mode = 0
 limit_left = 0
 limit_top = -600
@@ -139,15 +154,12 @@ drag_margin_right = 0.0
 drag_margin_bottom = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1, 0 )
-rotation = 1.5708
-shape = SubResource( 10 )
+position = Vector2( 0, -2.38419e-07 )
+shape = SubResource( 14 )
 
 [node name="Area2D" type="Area2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 0, 0.5 )
 shape = SubResource( 2 )
 
 [node name="UI" type="Node2D" parent="."]
@@ -218,3 +230,28 @@ scale = Vector2( 0.094, 0.09 )
 z_index = -1
 texture = ExtResource( 16 )
 centered = false
+
+[node name="face" type="Position2D" parent="."]
+position = Vector2( 5, -1 )
+
+[node name="item" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+
+[node name="right" type="Area2D" parent="."]
+position = Vector2( 10, -4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="right"]
+position = Vector2( -1.5, 4.5 )
+shape = SubResource( 12 )
+
+[node name="left" type="Area2D" parent="."]
+position = Vector2( -10, -4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="left"]
+position = Vector2( 1.5, 4.5 )
+shape = SubResource( 13 )
+
+[connection signal="body_entered" from="right" to="." method="_on_right_body_entered"]
+[connection signal="body_exited" from="right" to="." method="_on_right_body_exited"]
+[connection signal="body_entered" from="left" to="." method="_on_left_body_entered"]
+[connection signal="body_exited" from="left" to="." method="_on_left_body_exited"]

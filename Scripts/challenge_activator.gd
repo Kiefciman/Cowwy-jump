@@ -15,6 +15,7 @@ func _process(delta):
 	if $Panel.visible == true:
 		if challenge_accepted == false:
 			if Input.is_action_pressed("f"):
+				challenge.score = 0
 				$Panel.visible = false
 				$Panel2.visible = true
 				challenge.challenge = true

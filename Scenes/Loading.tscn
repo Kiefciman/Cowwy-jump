@@ -76,12 +76,14 @@ script = ExtResource( 1 )
 position = Vector2( 0, 17 )
 frames = SubResource( 1 )
 animation = "New Anim"
-frame = 2
+frame = 1
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite"]
 position = Vector2( 0, -16 )
 current = true
+zoom = Vector2( 0.5, 0.5 )
+limit_bottom = 96
 
 [node name="grass-back" parent="." instance=ExtResource( 7 )]
 material = null
@@ -289,11 +291,11 @@ scroll_active = false
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
 margin_left = -105.0
 margin_top = 53.0
-margin_right = 1375.0
+margin_right = 1489.0
 margin_bottom = 144.0
 rect_scale = Vector2( 0.06, 0.06 )
 theme = ExtResource( 12 )
-text = " Tip: Do you belive fart is real? Think twice"
+text = " Tip: Do you belive farting is real? Think twice"
 fit_content_height = true
 scroll_active = false
 
@@ -312,3 +314,15 @@ texture = ExtResource( 14 )
 scale = Vector2( 0.4, 0.4 )
 z_index = 100
 texture = ExtResource( 15 )
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = -104.0
+margin_top = -59.0
+margin_right = 2776.0
+margin_bottom = 123.0
+rect_scale = Vector2( 0.05, 0.05 )
+theme = ExtResource( 12 )
+text = " If one eye is bigger than the other, change the zoom using the scroll wheel
+ IDK how to fix it"
+fit_content_height = true
+scroll_active = false

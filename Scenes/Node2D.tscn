@@ -1,4 +1,4 @@
-[gd_scene load_steps=107 format=2]
+[gd_scene load_steps=109 format=2]
 
 [ext_resource path="res://Assets/ground/ground-top.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -47,9 +47,12 @@
 [ext_resource path="res://Assets/background/ground-top.png" type="Texture" id=45]
 [ext_resource path="res://Assets/background/ground-bot.png" type="Texture" id=46]
 [ext_resource path="res://Scripts/help.gd" type="Script" id=47]
+[ext_resource path="res://Scenes/Fly.tscn" type="PackedScene" id=48]
+[ext_resource path="res://Scenes/Rock.tscn" type="PackedScene" id=49]
 
 [sub_resource type="ShaderMaterial" id=6]
 shader = ExtResource( 25 )
+shader_param/t = 0.0
 shader_param/speed = 0.03
 shader_param/minStrength = 0.05
 shader_param/maxStrength = 0.01
@@ -124,8 +127,8 @@ resource_local_to_scene = true
 } ]
 0/z_index = 0
 
-[sub_resource type="ConvexPolygonShape2D" id=9]
-points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+[sub_resource type="ConvexPolygonShape2D" id=67]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="TileSet" id=10]
 resource_local_to_scene = true
@@ -148,14 +151,14 @@ resource_local_to_scene = true
 1/navigation_offset = Vector2( 0, 0 )
 1/shape_offset = Vector2( 0, 0 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape = SubResource( 9 )
+1/shape = SubResource( 67 )
 1/shape_one_way = false
 1/shape_one_way_margin = 1.0
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 9 ),
+"shape": SubResource( 67 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 1/z_index = 0
@@ -591,7 +594,7 @@ extents = Vector2( 8, 16 )
 
 [sub_resource type="ShaderMaterial" id=41]
 shader = ExtResource( 16 )
-shader_param/OCTAVE = 10
+shader_param/OCTAVE = 7
 shader_param/mulscale = 8.3
 shader_param/height = 0.515
 shader_param/tide = 0.088
@@ -717,18 +720,17 @@ shader_param/offset = 0.0
 0/shapes = [  ]
 0/z_index = 0
 
-[node name="Node2D" type="Node2D"]
+[node name="Level" type="Node2D"]
 script = ExtResource( 4 )
+fly_scene = ExtResource( 48 )
+rock_scene = ExtResource( 49 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 80, -24 )
+position = Vector2( 44, -40 )
 __meta__ = {
 "_edit_group_": true,
 "_editor_description_": "cow"
 }
-initial_speed = 70
-initial_jump = 150
-gravity = 650
 
 [node name="ground" type="Node2D" parent="."]
 z_index = 1
@@ -816,6 +818,12 @@ frame = 2
 [node name="grass-back14" parent="ground/grass_back" instance=ExtResource( 18 )]
 material = SubResource( 6 )
 position = Vector2( 216, -40 )
+frames = SubResource( 5 )
+frame = 2
+
+[node name="grass-back85" parent="ground/grass_back" instance=ExtResource( 18 )]
+material = SubResource( 6 )
+position = Vector2( 232, -40 )
 frames = SubResource( 5 )
 frame = 2
 
@@ -4971,9 +4979,6 @@ tile_set = SubResource( 10 )
 cell_size = Vector2( 16, 16 )
 cell_quadrant_size = 1
 cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
-cell_y_sort = true
-collision_layer = 3
-collision_mask = 3
 format = 1
 tile_data = PoolIntArray( -1572866, 1, 0, -1572865, 1, 0, -1638400, 1, 0, -1638399, 1, 0, -1638367, 1, 0, -1572833, 1, 0, -1572832, 1, 0, -1572830, 1, 0, -1507304, 1, 0, -1507303, 1, 0, -1507302, 1, 0, -1507301, 1, 0, -1507298, 1, 0, -1507293, 1, 0, -1507292, 1, 0, -1507291, 1, 0, -1507290, 1, 0, -1507289, 1, 0, -1507284, 1, 0, -1507283, 1, 0, -1507282, 1, 0, -1507281, 1, 0, -1507280, 1, 0, -1507279, 1, 0, -1507274, 1, 0, -1507273, 1, 0, -1441771, 1, 0, -1441770, 1, 0, -1441769, 1, 0, -1441764, 1, 0, -1441763, 1, 0, -1441736, 1, 0, -1441735, 1, 0, -1441734, 1, 0, -1441733, 1, 0, -1441732, 1, 0, -1376241, 1, 0, -1376240, 1, 0, -1376239, 1, 0, -1376238, 1, 0, -1376237, 1, 0, -1376236, 1, 0, -1376195, 1, 0, -1376194, 1, 0, -1376193, 1, 0, -1310706, 1, 0, -1310656, 1, 0, -1310655, 1, 0, -1310654, 1, 0, -1245172, 1, 0, -1245171, 1, 0, -1245117, 1, 0, -1245116, 1, 0, -1245115, 1, 0, -1245114, 1, 0, -1245113, 1, 0, -1245112, 1, 0, -1245111, 1, 0, -1245079, 1, 0, -1245078, 1, 0, -1179574, 1, 0, -1179573, 1, 0, -1114036, 1, 0, -1048574, 1, 0, -1048573, 1, 0, -1048572, 1, 0, -1048571, 1, 0, -1048565, 1, 0, -1048499, 1, 0, -1048498, 1, 0, -1048497, 1, 0, -982960, 1, 0, -982959, 1, 0, -917422, 1, 0, -851885, 1, 0, -851874, 1, 0, -851873, 1, 0, -851870, 1, 0, -851869, 1, 0, -851868, 1, 0, -851867, 1, 0, -851866, 1, 0, -851865, 1, 0, -851864, 1, 0, -786360, 1, 0, -786359, 1, 0, -786358, 1, 0, -786357, 1, 0, -786353, 1, 0, -786352, 1, 0, -786345, 1, 0, -786344, 1, 0, -786339, 1, 0, -786336, 1, 0, -786335, 1, 0, -720838, 1, 0, -720837, 1, 0, -720836, 1, 0, -720835, 1, 0, -720830, 1, 0, -720829, 1, 0, -720828, 1, 0, -720827, 1, 0, -720826, 1, 0, -720825, 1, 0, -720820, 1, 0, -720818, 1, 0, -720815, 1, 0, -720814, 1, 0, -720813, 1, 0, -720812, 1, 0, -720811, 1, 0, -720810, 1, 0, -720807, 1, 0, -720804, 1, 0, -655303, 1, 0, -655283, 1, 0, -655270, 1, 0, -655269, 1, 0, -589768, 1, 0, -524234, 1, 0, -524233, 1, 0, -393218, 1, 0, -393217, 1, 0, -458700, 1, 0, -458699, 1, 0, -393175, 1, 0, -393174, 1, 0, -393173, 1, 0, -393172, 1, 0, -393171, 1, 0, -393167, 1, 0, -393166, 1, 0, -393165, 1, 0, -327655, 1, 0, -327654, 1, 0, -327653, 1, 0, -327652, 1, 0, -327651, 1, 0, -327650, 1, 0, -327645, 1, 0, -327644, 1, 0, -327643, 1, 0, -327642, 1, 0, -327641, 1, 0, -327640, 1, 0, -262121, 1, 0, -262120, 1, 0, -196587, 1, 0, -196586, 1, 0, -131060, 1, 0, -131059, 1, 0, -131058, 1, 0, -131057, 1, 0, -131054, 1, 0, -131053, 1, 0, -131052, 1, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0, -65532, 1, 0, -65531, 1, 0, -65530, 1, 0, -65529, 1, 0, -65528, 1, 0, -65527, 1, 0, -65526, 1, 0, -65525, 1, 0 )
 
@@ -5901,41 +5906,49 @@ position = Vector2( -32, -56 )
 material = SubResource( 33 )
 position = Vector2( 8, -72 )
 frames = SubResource( 37 )
+frame = 1
 
 [node name="thicc_tree2" parent="trees/thicc" instance=ExtResource( 17 )]
 material = SubResource( 33 )
 position = Vector2( 568, -136 )
 frames = SubResource( 37 )
+frame = 1
 
 [node name="thicc_tree3" parent="trees/thicc" instance=ExtResource( 17 )]
 material = SubResource( 33 )
 position = Vector2( 688, -152 )
 frames = SubResource( 37 )
+frame = 1
 
 [node name="thicc_tree4" parent="trees/thicc" instance=ExtResource( 17 )]
 material = SubResource( 33 )
 position = Vector2( 1520, -248 )
 frames = SubResource( 37 )
+frame = 1
 
 [node name="thicc_tree5" parent="trees/thicc" instance=ExtResource( 17 )]
 material = SubResource( 33 )
 position = Vector2( 744, -424 )
 frames = SubResource( 37 )
+frame = 1
 
 [node name="thicc_tree6" parent="trees/thicc" instance=ExtResource( 17 )]
 material = SubResource( 33 )
 position = Vector2( 584, -424 )
 frames = SubResource( 37 )
+frame = 1
 
 [node name="thicc_tree7" parent="trees/thicc" instance=ExtResource( 17 )]
 material = SubResource( 33 )
 position = Vector2( 288, -392 )
 frames = SubResource( 37 )
+frame = 1
 
 [node name="thicc_tree8" parent="trees/thicc" instance=ExtResource( 17 )]
 material = SubResource( 33 )
 position = Vector2( 176, -360 )
 frames = SubResource( 37 )
+frame = 1
 
 [node name="skinny" type="Node2D" parent="trees"]
 position = Vector2( 8, -80 )
@@ -5944,76 +5957,91 @@ position = Vector2( 8, -80 )
 material = SubResource( 38 )
 position = Vector2( 232, -64 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree2" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 144, -64 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree3" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 312, -96 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree4" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 408, -112 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree5" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 808, -160 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree6" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 1336, -224 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree7" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 1224, -272 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree8" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 1128, -320 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree9" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 1056, -336 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree10" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 968, -352 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree11" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 856, -384 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree12" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 440, -416 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree13" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 352, -400 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree14" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( -56, -432 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="skinny-tree15" parent="trees/skinny" instance=ExtResource( 5 )]
 material = SubResource( 38 )
 position = Vector2( 8, -288 )
 frames = SubResource( 29 )
+frame = 0
 
 [node name="bushes" type="Node2D" parent="."]
 position = Vector2( -8, -32 )
@@ -6023,84 +6051,84 @@ material = SubResource( 39 )
 position = Vector2( 96, -32 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bush3" parent="bushes" instance=ExtResource( 6 )]
 material = SubResource( 39 )
 position = Vector2( 24, -30 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bush4" parent="bushes" instance=ExtResource( 6 )]
 material = SubResource( 39 )
 position = Vector2( 344, -64 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bush5" parent="bushes" instance=ExtResource( 6 )]
 material = SubResource( 39 )
 position = Vector2( 404, -96 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bush6" parent="bushes" instance=ExtResource( 6 )]
 material = SubResource( 39 )
 position = Vector2( 440, -94 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bush7" parent="bushes" instance=ExtResource( 6 )]
 material = SubResource( 39 )
 position = Vector2( 600, -94 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bush8" parent="bushes" instance=ExtResource( 6 )]
 material = SubResource( 39 )
 position = Vector2( 672, -110 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bush9" parent="bushes" instance=ExtResource( 6 )]
 material = SubResource( 39 )
 position = Vector2( 788, -112 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bush10" parent="bushes" instance=ExtResource( 6 )]
 material = SubResource( 39 )
 position = Vector2( 872, -144 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bush11" parent="bushes" instance=ExtResource( 6 )]
 material = SubResource( 39 )
 position = Vector2( 1064, -190 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bush12" parent="bushes" instance=ExtResource( 6 )]
 material = SubResource( 39 )
 position = Vector2( 1120, -190 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bush13" parent="bushes" instance=ExtResource( 6 )]
 material = SubResource( 39 )
 position = Vector2( 1160, -206 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 40 )
-frame = 1
+frame = 0
 
 [node name="bridge" type="StaticBody2D" parent="."]
 modulate = Color( 1, 1, 1, 0.6 )
@@ -6213,67 +6241,76 @@ z_index = 100
 texture = ExtResource( 42 )
 
 [node name="animals" type="Node2D" parent="."]
-z_index = 1
+z_index = -1
+z_as_relative = false
 
-[node name="Frog" parent="animals" instance=ExtResource( 44 )]
-position = Vector2( 204, -44 )
+[node name="flies" type="Node2D" parent="animals"]
 
-[node name="Frog2" parent="animals" instance=ExtResource( 44 )]
+[node name="frogs" type="Node2D" parent="animals"]
+
+[node name="Frog" parent="animals/frogs" instance=ExtResource( 44 )]
+position = Vector2( 180, -48 )
+
+[node name="Frog2" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 224, -40 )
 
-[node name="Frog3" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog3" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 248, -48 )
 
-[node name="Frog4" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog4" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 268, -16 )
 
-[node name="Frog5" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog5" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 304, -48 )
 speed = 30
 
-[node name="Frog6" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog6" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 492, -92 )
 speed = 30
 
-[node name="Frog7" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog7" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 536, -84 )
 speed = 30
 
-[node name="Frog8" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog8" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 768, -92 )
 speed = 30
 
-[node name="Frog9" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog9" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 948, -188 )
 speed = 30
 
-[node name="Frog10" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog10" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 1016, -164 )
 speed = 30
 
-[node name="Frog11" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog11" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 1040, -160 )
 speed = 30
 
-[node name="Frog12" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog12" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 876, -376 )
 speed = 30
 
-[node name="Frog13" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog13" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 756, -384 )
 speed = 30
 
-[node name="Frog14" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog14" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 828, -364 )
 speed = 30
 
-[node name="Frog15" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog15" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 480, -380 )
 speed = 30
 
-[node name="Frog16" parent="animals" instance=ExtResource( 44 )]
+[node name="Frog16" parent="animals/frogs" instance=ExtResource( 44 )]
 position = Vector2( 256, -364 )
 speed = 30
+
+[node name="apples" type="Node2D" parent="."]
+
+[node name="rocks" type="Node2D" parent="."]
 
 [connection signal="area_entered" from="ground/Water/surface/water_area" to="Player" method="_on_water_area_area_entered"]
 [connection signal="area_exited" from="ground/Water/surface/water_area" to="Player" method="_on_water_area_area_exited"]

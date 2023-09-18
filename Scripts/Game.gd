@@ -11,6 +11,8 @@ var starget: int
 var speedplus: float
 export var fly_scene: PackedScene
 export var rock_scene: PackedScene
+export var fish_scene: PackedScene
+export var crow_scene: PackedScene
 
 func spawn_flies(amount):
 	for i in range(amount):
@@ -19,10 +21,16 @@ func spawn_flies(amount):
 		fly.position = Vector2(int(rand_range(10.0, 1670.0)), int(rand_range(-20.0, -530.0)))
 		
 func spawn_rocks(amount, x_min, x_max, y_min, y_max):
-	for i in range(amount):
+	for i in range(randi() % amount + 1):
 		var rock = rock_scene.instance()
 		$rocks.add_child(rock)
 		rock.position = Vector2(int(rand_range(x_min, x_max)), int(rand_range(y_min, y_max)))
+		
+func spawn_crows(amount, x_min, x_max, y_min, y_max):
+	for i in range(randi() % amount + 1):
+		var crow = crow_scene.instance()
+		$animals/crows.add_child(crow)
+		crow.position = Vector2(int(rand_range(x_min, x_max)), int(rand_range(y_min, y_max)))
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
@@ -30,7 +38,19 @@ func _ready():
 	global.wind_direction = wind_directions[randi() % 2]
 	global.wind_speed = rand_range(0.03, 0.3) * global.wind_direction
 	spawn_flies(200)
-	spawn_rocks(3, 10, 180, -20, -30)
+	spawn_rocks(4, 10, 180, -20, -30)
+	spawn_rocks(3, 410, 720, -85, -95)
+	spawn_rocks(6, 1350, 1660, -210, -220)
+	spawn_rocks(3, 870, 1280, -370, -380)
+	spawn_rocks(2, 220, 630, -405, -415)
+	for water in $ground/Water/surface.get_children():
+		var fish = fish_scene.instance()
+		fish.global_position = water.global_position + Vector2(10, 10)
+		self.add_child(fish)
+#	for water in $ground/Water/underground.get_children():
+#		var fish = fish_scene.instance()
+#		water.add_child(fish)
+	spawn_crows(4, 1300, 1620, -240, -340)
 
 func _process(delta):
 	Engine.set_target_fps(Engine.get_iterations_per_second())
@@ -62,4 +82,3 @@ func _process(delta):
 	if Input.is_action_just_released("debug"):
 		change_speed_plus_minus *= -1
 			
-#	print($Player.global_position, $ground/grass_front/grass_front243.global_position)

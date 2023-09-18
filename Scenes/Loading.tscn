@@ -76,7 +76,6 @@ script = ExtResource( 1 )
 position = Vector2( 0, 17 )
 frames = SubResource( 1 )
 animation = "New Anim"
-frame = 1
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite"]
@@ -322,7 +321,7 @@ margin_right = 2776.0
 margin_bottom = 123.0
 rect_scale = Vector2( 0.05, 0.05 )
 theme = ExtResource( 12 )
-text = " If one eye is bigger than the other, change the zoom using the scroll wheel
- IDK how to fix it"
+text = " If you encounter visual glitches, change the zoom using the scroll wheel
+ Bugs amount: Bethesda level"
 fit_content_height = true
 scroll_active = false

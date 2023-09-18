@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/watr-fluid-10149.mp3-9ee5450f4df9f0bb2cea3570e9d0bf08.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/watr-fluid-10149.mp3"
+dest_files=[ "res://.import/watr-fluid-10149.mp3-9ee5450f4df9f0bb2cea3570e9d0bf08.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

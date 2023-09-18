@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/good-night-160166.mp3-c112557c5321019c352e6a9ccd721f90.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/good-night-160166.mp3"
+dest_files=[ "res://.import/good-night-160166.mp3-c112557c5321019c352e6a9ccd721f90.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

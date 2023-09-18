@@ -267,6 +267,8 @@ config/icon="res://icon.png"
 [autoload]
 
 global="*res://Scripts/global.gd"
+IconLoader="*res://addons/file-editor/scripts/IconLoader.gd"
+LastOpenedFiles="*res://addons/file-editor/scripts/LastOpenedFiles.gd"
 
 [debug]
 
@@ -274,8 +276,8 @@ settings/fps/force_fps=60
 
 [discord_presence]
 
-first_button/label="Kiefciman's Github"
-first_button/url="https://github.com/Kiefciman"
+first_button/label="Download Cowwy Jump"
+first_button/url="https://github.com/Kiefciman/Cowwy-jump/releases"
 settings/change_time_per_screen=true
 
 [display]
@@ -383,7 +385,7 @@ debug={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":96,"unicode":0,"echo":false,"script":null)
  ]
 }
-shoot={
+throw={
 "deadzone": 0.5,
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":3,"pressed":false,"doubleclick":false,"script":null)
  ]
@@ -401,6 +403,11 @@ scroll_down={
 e={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":69,"unicode":0,"echo":false,"script":null)
+ ]
+}
+g={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":71,"unicode":0,"echo":false,"script":null)
  ]
 }
 

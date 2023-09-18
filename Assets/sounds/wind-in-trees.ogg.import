@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/wind-in-trees.ogg-2ad7567046af65a09f6279579b5da7e8.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/wind-in-trees.ogg"
+dest_files=[ "res://.import/wind-in-trees.ogg-2ad7567046af65a09f6279579b5da7e8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

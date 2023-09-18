@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/spirit-blossom-15285.mp3-e7658a0609c580a8c1f41d8bb33c91d4.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/spirit-blossom-15285.mp3"
+dest_files=[ "res://.import/spirit-blossom-15285.mp3-e7658a0609c580a8c1f41d8bb33c91d4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

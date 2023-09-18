@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wind-in-trees.mp3-8dd37c1a4dbd724647162265ce41d5b3.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/wind-in-trees.mp3"
+dest_files=[ "res://.import/wind-in-trees.mp3-8dd37c1a4dbd724647162265ce41d5b3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

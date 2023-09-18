@@ -24,3 +24,6 @@ playing = true
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 script = ExtResource( 4 )
+
+[node name="VisibilityNotifier2D2" type="VisibilityNotifier2D" parent="."]
+script = ExtResource( 4 )

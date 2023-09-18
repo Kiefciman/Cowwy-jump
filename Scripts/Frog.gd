@@ -119,6 +119,7 @@ func _integrate_forces(state):
 				if direction != 0:
 					self.linear_velocity.y = -jump + jump_mod
 					self.linear_velocity.x = speed * direction + speed_mod
+					$AudioStreamPlayer2D.play()
 #					apply_central_impulse(Vector2(speed, -jump))
 #					print(self.linear_velocity.x)
 #					print("A")
@@ -168,6 +169,10 @@ func _integrate_forces(state):
 	
 #	velocity = move_and_slide(velocity, Vector2.UP, false, 1, PI/4, infinite_inertia)
 #	move_and_collide(velocity, infinite_inertia)
+
+	if sleeping:
+		print("aaaaaaaaa")
+#	print(sleeping)
 	
 func _on_Frog_body_entered(body):
 	$Sprite.texture = idle
@@ -177,3 +182,7 @@ func _on_Frog_body_exited(body):
 	$Sprite.texture = jumping
 	landed = false
 	s = 0
+
+
+func _on_AudioStreamPlayer2D_finished():
+	$AudioStreamPlayer2D.stop()

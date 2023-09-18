@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lofi-chill-140858.mp3-cbf3c4507c436932b065ca5b3e7e9748.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/lofi-chill-140858.mp3"
+dest_files=[ "res://.import/lofi-chill-140858.mp3-cbf3c4507c436932b065ca5b3e7e9748.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

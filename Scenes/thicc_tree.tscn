@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Shaders/slow-wind.shader" type="Shader" id=1]
 [ext_resource path="res://Assets/trees/tree2.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://Assets/trees/leaf.png" type="Texture" id=4]
 [ext_resource path="res://Shaders/slow-slow-wind.shader" type="Shader" id=5]
 [ext_resource path="res://Scripts/VisibilityNotifier2D.gd" type="Script" id=6]
+[ext_resource path="res://Assets/sounds/wind-in-trees.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Scripts/thicc_tree.gd" type="Script" id=8]
 
 [sub_resource type="ShaderMaterial" id=33]
 shader = ExtResource( 1 )
@@ -44,13 +46,13 @@ material = SubResource( 33 )
 position = Vector2( 44, -64 )
 z_index = -2
 frames = SubResource( 32 )
-frame = 2
 playing = true
+script = ExtResource( 8 )
 
 [node name="crown" type="Sprite" parent="."]
 material = SubResource( 34 )
 position = Vector2( -3, -16 )
-z_index = -1
+z_index = 1
 texture = ExtResource( 3 )
 centered = false
 
@@ -89,3 +91,7 @@ damping_random = 0.5
 angle_random = 0.36
 hue_variation = 1.0
 hue_variation_random = 1.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+max_distance = 250.0

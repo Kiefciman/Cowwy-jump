@@ -10,6 +10,7 @@ var initial_position
 var t = 0
 
 func _ready():
+	$AudioStreamPlayer2D.play()
 	$AnimationPlayer.current_animation = "a"
 	has_apples = index[randi() % 2]
 	if has_apples:
